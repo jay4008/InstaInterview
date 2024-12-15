@@ -1,0 +1,1321 @@
+{
+    "quiz": [
+      {
+        "id": 1,
+        "category": "Basic",
+        "question": "What does the 'var' keyword do in JavaScript?",
+        "options": [
+          "Defines a constant variable",
+          "Defines a variable that can be reassigned",
+          "Defines a variable with a fixed value"
+        ],
+        "correct_answer": 1,
+        "explanation": "The 'var' keyword is used to declare a variable that can be reassigned. However, it has function-scoped behavior."
+      },
+      {
+        "id": 2,
+        "category": "Basic",
+        "question": "Which method is used to parse a JSON string in JavaScript?",
+        "options": [
+          "JSON.parse()",
+          "JSON.stringify()",
+          "JSON.decode()"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'JSON.parse()' method is used to convert a JSON string into a JavaScript object."
+      },
+      {
+        "id": 3,
+        "category": "Basic",
+        "question": "Which of the following is the correct syntax to declare a constant variable in JavaScript?",
+        "options": [
+          "const myVar = 10;",
+          "let myVar = 10;",
+          "var myVar = 10;"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'const' keyword is used to declare a constant variable whose value cannot be reassigned after initialization."
+      },
+      {
+        "id": 4,
+        "category": "Basic",
+        "question": "What is the default value of a variable declared but not initialized in JavaScript?",
+        "options": [
+          "undefined",
+          "null",
+          "NaN"
+        ],
+        "correct_answer": 0,
+        "explanation": "In JavaScript, a variable declared without an initial value is assigned the value 'undefined'."
+      },
+      {
+        "id": 5,
+        "category": "Advanced",
+        "question": "What will be the result of the following code?\n\nconsole.log('5' + 3);",
+        "options": [
+          "'53'",
+          "8",
+          "NaN",
+          "'5'"
+        ],
+        "correct_answer": 0,
+        "explanation": "In JavaScript, when a string is added to a number using the '+' operator, the number is converted to a string and concatenated, resulting in '53'."
+      },
+      {
+        "id": 6,
+        "category": "Advanced",
+        "question": "What does the 'this' keyword refer to in JavaScript?",
+        "options": [
+          "The current function",
+          "The global object",
+          "The object the function is a method of"
+        ],
+        "correct_answer": 2,
+        "explanation": "In JavaScript, the 'this' keyword refers to the object that the function is a method of. Its value depends on how the function is called."
+      },
+      {
+        "id": 7,
+        "category": "Advanced",
+        "question": "What is a closure in JavaScript?",
+        "options": [
+          "A function inside another function",
+          "A function that remembers its lexical scope even when the function is executed outside that scope",
+          "A function that can be called only once"
+        ],
+        "correct_answer": 1,
+        "explanation": "A closure allows a function to access variables from its outer function, even after the outer function has finished executing."
+      },
+      {
+        "id": 8,
+        "category": "Advanced",
+        "question": "Which of the following is used to handle asynchronous operations in JavaScript?",
+        "options": [
+          "Callbacks",
+          "Promises",
+          "Both A and B"
+        ],
+        "correct_answer": 2,
+        "explanation": "JavaScript uses both callbacks and promises to handle asynchronous operations. Promises allow chaining and handling asynchronous results more efficiently."
+      },
+      {
+        "id": 9,
+        "category": "Advanced",
+        "question": "What will be the output of the following code?\n\nconsole.log([1] == [1]);",
+        "options": [
+          "true",
+          "false",
+          "undefined",
+          "Error"
+        ],
+        "correct_answer": 1,
+        "explanation": "In JavaScript, comparing arrays with '==' compares their references, not their contents. So, two distinct arrays are not equal."
+      },
+      {
+        "id": 10,
+        "category": "Advanced",
+        "question": "What is the purpose of the 'bind()' method in JavaScript?",
+        "options": [
+          "It binds an event to an element",
+          "It changes the 'this' context of a function",
+          "It creates a new function without arguments"
+        ],
+        "correct_answer": 1,
+        "explanation": "The 'bind()' method creates a new function that, when invoked, has its 'this' value set to the provided context."
+      },
+      {
+        "id": 11,
+        "category": "Basic",
+        "question": "Which method is used to remove the last item from an array in JavaScript?",
+        "options": [
+          "pop()",
+          "shift()",
+          "push()"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'pop()' method is used to remove the last item from an array."
+      },
+      {
+        "id": 12,
+        "category": "Basic",
+        "question": "What is the correct syntax for a for loop in JavaScript?",
+        "options": [
+          "for (var i = 0; i < 5; i++) {}",
+          "for (i = 0; i < 5) {}",
+          "for (i < 5; i++) {}"
+        ],
+        "correct_answer": 0,
+        "explanation": "The correct syntax for a for loop in JavaScript is 'for (var i = 0; i < 5; i++) {}'."
+      },
+      {
+        "id": 13,
+        "category": "Basic",
+        "question": "Which operator is used to assign a value to a variable in JavaScript?",
+        "options": [
+          "=",
+          "==",
+          "===",
+          ":="
+        ],
+        "correct_answer": 0,
+        "explanation": "The '=' operator is used to assign a value to a variable in JavaScript."
+      },
+      {
+        "id": 14,
+        "category": "Basic",
+        "question": "Which of the following is a primitive data type in JavaScript?",
+        "options": [
+          "Array",
+          "Object",
+          "String",
+          "Function"
+        ],
+        "correct_answer": 2,
+        "explanation": "A 'String' is a primitive data type in JavaScript, whereas arrays, objects, and functions are non-primitive."
+      },
+      {
+        "id": 15,
+        "category": "Advanced",
+        "question": "What is the result of the following expression?\n\n[1, 2] + [3, 4];",
+        "options": [
+          "[1, 2, 3, 4]",
+          "'1,23,4'",
+          "'1,2,3,4'",
+          "Error"
+        ],
+        "correct_answer": 2,
+        "explanation": "In JavaScript, when two arrays are concatenated using the '+' operator, they are converted to strings and concatenated, resulting in '1,2,3,4'."
+      },
+      {
+        "id": 16,
+        "category": "Advanced",
+        "question": "Which of the following will return 'true' when comparing objects in JavaScript?",
+        "options": [
+          "{} == {}",
+          "{} === {}",
+          "Both A and B",
+          "None of the above"
+        ],
+        "correct_answer": 3,
+        "explanation": "In JavaScript, comparing objects with '==' or '===' always returns false because objects are compared by reference, not by value."
+      },
+      {
+        "id": 17,
+        "category": "Advanced",
+        "question": "What does the 'typeof' operator return when used on a null value in JavaScript?",
+        "options": [
+          "'null'",
+          "'object'",
+          "'undefined'",
+          "'NaN'"
+        ],
+        "correct_answer": 1,
+        "explanation": "In JavaScript, the 'typeof' operator returns 'object' for null, which is a known bug in JavaScript."
+      },
+      {
+        "id": 18,
+        "category": "Advanced",
+        "question": "What is the purpose of the 'apply()' method in JavaScript?",
+        "options": [
+          "It binds a function to an object",
+          "It changes the 'this' context of a function",
+          "It calls a function with an array of arguments",
+          "It creates a new function without arguments"
+        ],
+        "correct_answer": 2,
+        "explanation": "The 'apply()' method calls a function with a specified 'this' context and an array of arguments."
+      },
+      {
+        "id": 19,
+        "category": "Advanced",
+        "question": "Which of the following can be used to create a new object in JavaScript?",
+        "options": [
+          "Object.create()",
+          "new Object()",
+          "Both A and B",
+          "None of the above"
+        ],
+        "correct_answer": 2,
+        "explanation": "Both 'Object.create()' and 'new Object()' can be used to create a new object in JavaScript."
+      },
+      {
+        "id": 20,
+        "category": "Advanced",
+        "question": "What is the result of the following code?\n\nconsole.log(0.1 + 0.2 === 0.3);",
+        "options": [
+          "true",
+          "false",
+          "NaN",
+          "Error"
+        ],
+        "correct_answer": 1,
+        "explanation": "Due to floating-point precision errors in JavaScript, the result of 0.1 + 0.2 is not exactly equal to 0.3. Therefore, the comparison returns 'false'."
+      },
+      {
+        "id": 21,
+        "category": "Basic",
+        "question": "What is the default value of a variable declared with 'let' but not initialized in JavaScript?",
+        "options": [
+          "undefined",
+          "null",
+          "NaN",
+          "ReferenceError"
+        ],
+        "correct_answer": 0,
+        "explanation": "A variable declared with 'let' but not initialized in JavaScript has the value 'undefined'."
+      },
+      {
+        "id": 22,
+        "category": "Basic",
+        "question": "Which of the following is used to check the type of a variable in JavaScript?",
+        "options": [
+          "typeOf()",
+          "typeof",
+          "checkType()",
+          "type()"
+        ],
+        "correct_answer": 1,
+        "explanation": "The 'typeof' operator is used in JavaScript to check the type of a variable."
+      },
+      {
+        "id": 23,
+        "category": "Basic",
+        "question": "What does the 'isNaN()' function do in JavaScript?",
+        "options": [
+          "Checks if a value is a number",
+          "Checks if a value is NaN (Not-a-Number)",
+          "Checks if a value is an object",
+          "Checks if a value is a string"
+        ],
+        "correct_answer": 1,
+        "explanation": "The 'isNaN()' function checks whether a value is NaN (Not-a-Number)."
+      },
+      {
+        "id": 24,
+        "category": "Basic",
+        "question": "Which of the following is used to concatenate two strings in JavaScript?",
+        "options": [
+          "concat()",
+          "+",
+          "append()",
+          "merge()"
+        ],
+        "correct_answer": 1,
+        "explanation": "In JavaScript, the '+' operator is used to concatenate two strings."
+      },
+      {
+        "id": 25,
+        "category": "Advanced",
+        "question": "What is the result of the following code?\n\nconsole.log(1 + '1');",
+        "options": [
+          "'11'",
+          "2",
+          "'1'",
+          "NaN"
+        ],
+        "correct_answer": 0,
+        "explanation": "In JavaScript, when a number is added to a string, the number is converted to a string and the two are concatenated, resulting in '11'."
+      },
+      {
+        "id": 26,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nconsole.log([] == false);",
+        "options": [
+          "true",
+          "false",
+          "undefined",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "In JavaScript, an empty array '[]' is considered falsy, so it is loosely equal to 'false' when using '==' comparison."
+      },
+      {
+        "id": 27,
+        "category": "Advanced",
+        "question": "What is the result of the following code?\n\nconsole.log(0 == false);",
+        "options": [
+          "true",
+          "false",
+          "undefined",
+          "NaN"
+        ],
+        "correct_answer": 0,
+        "explanation": "In JavaScript, '0' is loosely equal to 'false' when using the '==' operator."
+      },
+      {
+        "id": 28,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\nconsole.log(1 == true);",
+        "options": [
+          "true",
+          "false",
+          "undefined",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "In JavaScript, '1' is loosely equal to 'true' when using the '==' operator, because 'true' is coerced to 1."
+      },
+      {
+        "id": 29,
+        "category": "Advanced",
+        "question": "What is the purpose of the 'setTimeout()' function in JavaScript?",
+        "options": [
+          "To delay the execution of a function",
+          "To execute a function immediately",
+          "To repeat a function periodically",
+          "To cancel a function execution"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'setTimeout()' function is used to delay the execution of a function after a specified amount of time in milliseconds."
+      },
+      {
+        "id": 30,
+        "category": "Advanced",
+        "question": "Which method can be used to add a new item to the beginning of an array in JavaScript?",
+        "options": [
+          "push()",
+          "unshift()",
+          "pop()",
+          "shift()"
+        ],
+        "correct_answer": 1,
+        "explanation": "The 'unshift()' method is used to add a new item to the beginning of an array in JavaScript."
+      },
+      {
+        "id": 31,
+        "category": "Basic",
+        "question": "Which method is used to add an element at the end of an array in JavaScript?",
+        "options": [
+          "push()",
+          "pop()",
+          "shift()",
+          "unshift()"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'push()' method is used to add one or more elements to the end of an array."
+      },
+      {
+        "id": 32,
+        "category": "Basic",
+        "question": "Which of the following is a way to define a function in JavaScript?",
+        "options": [
+          "function myFunction() {}",
+          "myFunction() => {}",
+          "function = myFunction() {}",
+          "function: myFunction() {}"
+        ],
+        "correct_answer": 0,
+        "explanation": "The correct syntax to define a function in JavaScript is 'function myFunction() {}'."
+      },
+      {
+        "id": 33,
+        "category": "Basic",
+        "question": "What is the correct way to comment in JavaScript?",
+        "options": [
+          "// This is a comment",
+          "# This is a comment",
+          "' This is a comment",
+          "/ This is a comment"
+        ],
+        "correct_answer": 0,
+        "explanation": "In JavaScript, single-line comments are made using '//'."
+      },
+      {
+        "id": 34,
+        "category": "Basic",
+        "question": "Which method is used to remove the first element from an array in JavaScript?",
+        "options": [
+          "pop()",
+          "shift()",
+          "push()",
+          "unshift()"
+        ],
+        "correct_answer": 1,
+        "explanation": "The 'shift()' method removes the first element from an array in JavaScript."
+      },
+      {
+        "id": 35,
+        "category": "Advanced",
+        "question": "What does the 'setInterval()' function do in JavaScript?",
+        "options": [
+          "Executes a function repeatedly with a fixed time delay",
+          "Executes a function after a delay",
+          "Clears an interval",
+          "Executes a function once"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'setInterval()' function is used to repeatedly execute a function with a fixed time delay (in milliseconds)."
+      },
+      {
+        "id": 36,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nconsole.log(NaN === NaN);",
+        "options": [
+          "true",
+          "false",
+          "undefined",
+          "Error"
+        ],
+        "correct_answer": 1,
+        "explanation": "In JavaScript, NaN is not equal to itself, so 'NaN === NaN' returns false."
+      },
+      {
+        "id": 37,
+        "category": "Advanced",
+        "question": "What is the purpose of the 'call()' method in JavaScript?",
+        "options": [
+          "It binds a function to an object",
+          "It changes the 'this' context of a function and immediately executes it",
+          "It delays the execution of a function",
+          "It creates a new function without arguments"
+        ],
+        "correct_answer": 1,
+        "explanation": "The 'call()' method allows you to change the 'this' context of a function and immediately execute it."
+      },
+      {
+        "id": 38,
+        "category": "Advanced",
+        "question": "What is the result of the following code?\n\nconsole.log('2' + 2 == 22);",
+        "options": [
+          "true",
+          "false",
+          "undefined",
+          "NaN"
+        ],
+        "correct_answer": 0,
+        "explanation": "In JavaScript, the '+' operator concatenates strings, so '2' + 2 results in '22', which is compared to 22, returning true."
+      },
+      {
+        "id": 39,
+        "category": "Advanced",
+        "question": "What does the 'Object.freeze()' method do in JavaScript?",
+        "options": [
+          "Prevents modification of an object",
+          "Allows modification of an object",
+          "Deletes all properties of an object",
+          "Creates a shallow copy of an object"
+        ],
+        "correct_answer": 0,
+        "explanation": "'Object.freeze()' is used to prevent modifications to an object in JavaScript."
+      },
+      {
+        "id": 40,
+        "category": "Advanced",
+        "question": "Which of the following are used to handle exceptions in JavaScript?",
+        "options": [
+          "try...catch",
+          "throw...catch",
+          "throw...finally",
+          "try...finally"
+        ],
+        "correct_answer": 0,
+        "explanation": "In JavaScript, exceptions are handled using 'try...catch'. The 'finally' block is optional for cleanup."
+      },
+      {
+        "id": 41,
+        "category": "Advanced",
+        "question": "What does a generator function in JavaScript return?",
+        "options": [
+          "A promise",
+          "An iterable object",
+          "A number",
+          "An array"
+        ],
+        "correct_answer": 1,
+        "explanation": "A generator function in JavaScript returns an iterable object, which can be used with loops like 'for...of'."
+      },
+      {
+        "id": 42,
+        "category": "Advanced",
+        "question": "What does the 'yield' keyword do in a generator function?",
+        "options": [
+          "Pauses the function execution and returns a value",
+          "Throws an error",
+          "Defines the function output",
+          "Resumes the function execution"
+        ],
+        "correct_answer": 0,
+        "explanation": "In a generator function, 'yield' pauses the function's execution and returns a value, allowing it to be resumed later."
+      },
+      {
+        "id": 43,
+        "category": "Advanced",
+        "question": "What is a closure in JavaScript?",
+        "options": [
+          "A function within another function that can access its outer function's variables",
+          "A special type of function that does not return a value",
+          "A function that is executed immediately",
+          "A method for invoking functions with arguments"
+        ],
+        "correct_answer": 0,
+        "explanation": "A closure in JavaScript is a function within another function that has access to the outer function's variables, even after the outer function has returned."
+      },
+      {
+        "id": 44,
+        "category": "Advanced",
+        "question": "What will be the output of the following code?\n\nfunction outer() {\n  let counter = 0;\n  function inner() {\n    counter++; \n    return counter; \n  }\n  return inner;\n}\nconst counterClosure = outer();\nconsole.log(counterClosure());",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "undefined"
+        ],
+        "correct_answer": 1,
+        "explanation": "The function 'counterClosure' is a closure that retains access to 'counter' from the outer function. The first call to 'counterClosure()' returns 1."
+      },
+      {
+        "id": 45,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\nfunction* generator() {\n  yield 1;\n  yield 2;\n  return 3;\n}\nconst gen = generator();\nconsole.log(gen.next());",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "undefined"
+        ],
+        "correct_answer": 0,
+        "explanation": "The first call to 'gen.next()' returns an object with the value 1 and a done status of 'false'."
+      },
+      {
+        "id": 46,
+        "category": "Advanced",
+        "question": "What will be the output of the following code?\n\nfunction* generator() {\n  yield* [1, 2, 3];\n}\nconst gen = generator();\nconsole.log([...gen]);",
+        "options": [
+          "[1, 2, 3]",
+          "[1, 2]",
+          "[2, 3]",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'yield*' expression delegates to an iterable object, so the output will be '[1, 2, 3]'."
+      },
+      {
+        "id": 47,
+        "category": "Advanced",
+        "question": "What is the result of the following code?\n\nlet a = 10;\n(function() {\n  let a = 20;\n  console.log(a);\n})();",
+        "options": [
+          "10",
+          "20",
+          "undefined",
+          "ReferenceError"
+        ],
+        "correct_answer": 1,
+        "explanation": "The inner function has its own local variable 'a', which is logged, resulting in '20'."
+      },
+      {
+        "id": 48,
+        "category": "Advanced",
+        "question": "What is a JavaScript promise?",
+        "options": [
+          "An object representing the eventual completion or failure of an asynchronous operation",
+          "A method to handle exceptions",
+          "A way to define multiple callback functions",
+          "A function that executes asynchronously"
+        ],
+        "correct_answer": 0,
+        "explanation": "A JavaScript promise represents the eventual completion (or failure) of an asynchronous operation and its resulting value."
+      },
+      {
+        "id": 49,
+        "category": "Advanced",
+        "question": "What will be the output of the following code?\n\nlet counter = (function() {\n  let count = 0;\n  return function() {\n    return count++;\n  };\n})();\nconsole.log(counter());",
+        "options": [
+          "0",
+          "1",
+          "undefined",
+          "NaN"
+        ],
+        "correct_answer": 0,
+        "explanation": "The counter function is a closure that returns the current value of 'count' before incrementing it, so the first output is '0'."
+      },
+      {
+        "id": 50,
+        "category": "Advanced",
+        "question": "What does the 'bind()' method do in JavaScript?",
+        "options": [
+          "Creates a new function with a specific 'this' value and initial arguments",
+          "Binds a function to an object",
+          "Changes the 'this' context of a function immediately",
+          "Returns a copy of the function"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'bind()' method creates a new function with a specific 'this' value and optional arguments, without calling the function immediately."
+      },
+      {
+        "id": 51,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nlet x = 1;\nfunction foo() {\n  console.log(x);\n  let x = 2;\n}\nfoo();",
+        "options": [
+          "1",
+          "2",
+          "undefined",
+          "ReferenceError"
+        ],
+        "correct_answer": 3,
+        "explanation": "In JavaScript, 'let' has block scope, and the variable 'x' is hoisted but not initialized, leading to a ReferenceError."
+      },
+      {
+        "id": 52,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\nconsole.log([1] == true);",
+        "options": [
+          "true",
+          "false",
+          "undefined",
+          "Error"
+        ],
+        "correct_answer": 1,
+        "explanation": "In JavaScript, an array is not loosely equal to a boolean, so '[1] == true' evaluates to false."
+      },
+      {
+        "id": 53,
+        "category": "Advanced",
+        "question": "Which method is used to create a shallow copy of an array in JavaScript?",
+        "options": [
+          "slice()",
+          "copy()",
+          "clone()",
+          "duplicate()"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'slice()' method is used to create a shallow copy of an array in JavaScript."
+      },
+      {
+        "id": 54,
+        "category": "Advanced",
+        "question": "Which of the following will not throw an error in JavaScript?",
+        "options": [
+          "var x = 10; delete x;",
+          "const y = 20; delete y;",
+          "let z = 30; delete z;",
+          "delete window.x;"
+        ],
+        "correct_answer": 3,
+        "explanation": "You cannot delete variables declared with 'let', 'const', or 'var'. However, properties of the global object (like 'window') can be deleted."
+      },
+      {
+        "id": 55,
+        "category": "Advanced",
+        "question": "What is the purpose of the 'Object.create()' method in JavaScript?",
+        "options": [
+          "Creates a new object with a specified prototype",
+          "Creates a shallow copy of an object",
+          "Freezes an object",
+          "Merges two objects"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'Object.create()' method creates a new object with the specified prototype object."
+      },
+      {
+        "id": 56,
+        "category": "Advanced",
+        "question": "Which function can be used to schedule a function to execute after a certain amount of time in JavaScript?",
+        "options": [
+          "setTimeout()",
+          "setInterval()",
+          "schedule()",
+          "execute()"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'setTimeout()' function is used to execute a function after a specified delay."
+      },
+      {
+        "id": 57,
+        "category": "Advanced",
+        "question": "What is the result of the following code?\n\nconst a = [1, 2, 3];\nconst b = [...a];\nb.push(4);\nconsole.log(a, b);",
+        "options": [
+          "[1, 2, 3] [1, 2, 3, 4]",
+          "[1, 2, 3] [1, 2, 3]",
+          "[1, 2, 3, 4] [1, 2, 3]",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The '...' (spread operator) creates a shallow copy of the array, so 'a' remains the same, and 'b' becomes '[1, 2, 3, 4]'."
+      },
+      {
+        "id": 58,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nconsole.log([1] == [1]);",
+        "options": [
+          "true",
+          "false",
+          "undefined",
+          "NaN"
+        ],
+        "correct_answer": 1,
+        "explanation": "In JavaScript, arrays are reference types, so '[1]' is not equal to '[1]' as they reference different objects."
+      },
+      {
+        "id": 59,
+        "category": "Advanced",
+        "question": "Which of the following can be used to create a private variable in JavaScript?",
+        "options": [
+          "Using closures",
+          "Using 'private' keyword",
+          "Using 'let' inside a function",
+          "Using a 'getter' method"
+        ],
+        "correct_answer": 0,
+        "explanation": "Closures can be used to create private variables by keeping variables scoped within a function and only accessible via inner functions."
+      },
+      {
+        "id": 60,
+        "category": "Advanced",
+        "question": "What does the 'bind()' method do in JavaScript?",
+        "options": [
+          "Creates a new function that is bound to a specified 'this' value",
+          "Binds an event listener to an element",
+          "Binds a function to a string",
+          "Changes the context of a function during execution"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'bind()' method creates a new function that is bound to a specific 'this' value and can optionally pre-assign parameters."
+      },
+      {
+        "id": 61,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nlet x = 10;\n(function() {\n  let x = 20;\n  console.log(x);\n})();",
+        "options": [
+          "10",
+          "20",
+          "undefined",
+          "ReferenceError"
+        ],
+        "correct_answer": 1,
+        "explanation": "The 'x' inside the function is scoped to the function and will log 20."
+      },
+      {
+        "id": 62,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nconsole.log([] == []);",
+        "options": [
+          "true",
+          "false",
+          "undefined",
+          "NaN"
+        ],
+        "correct_answer": 1,
+        "explanation": "In JavaScript, arrays are reference types, so comparing two arrays checks if they reference the same object. Different arrays will return false."
+      },
+      {
+        "id": 63,
+        "category": "Advanced",
+        "question": "What will be the output of the following code?\n\nfunction foo() {\n  return (function bar() {\n    console.log('bar');\n  })();\n}\nfoo();",
+        "options": [
+          "undefined",
+          "'bar'",
+          "'foo'",
+          "Error"
+        ],
+        "correct_answer": 1,
+        "explanation": "The function 'bar' is invoked immediately inside 'foo', so it will log 'bar'."
+      },
+      {
+        "id": 64,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nfunction* generateNumbers() {\n  yield 1;\n  yield 2;\n  return 3;\n}\nconst generator = generateNumbers();\nconsole.log(generator.next());",
+        "options": [
+          "{value: 1, done: false}",
+          "{value: 2, done: false}",
+          "{value: 3, done: true}",
+          "{value: undefined, done: true}"
+        ],
+        "correct_answer": 0,
+        "explanation": "The first 'next()' call will yield 1, returning the object {value: 1, done: false}."
+      },
+      {
+        "id": 65,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\nconst obj = { x: 10 };\nconst foo = obj;\nfoo.x = 20;\nconsole.log(obj.x);",
+        "options": [
+          "10",
+          "20",
+          "undefined",
+          "ReferenceError"
+        ],
+        "correct_answer": 1,
+        "explanation": "Both 'obj' and 'foo' reference the same object. Changing 'foo.x' will also change 'obj.x'."
+      },
+      {
+        "id": 66,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\nconst nums = [1, 2, 3];\nconst newNums = nums.map(num => num * 2);\nconsole.log(newNums);",
+        "options": [
+          "[1, 2, 3]",
+          "[2, 4, 6]",
+          "[2, 2, 2]",
+          "[3, 6, 9]"
+        ],
+        "correct_answer": 1,
+        "explanation": "The 'map()' method creates a new array with each element of 'nums' multiplied by 2, resulting in '[2, 4, 6]'."
+      },
+      {
+        "id": 67,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nconst obj = { a: 1, b: 2 };\nconst { a, b } = obj;\nconsole.log(a, b);",
+        "options": [
+          "1 2",
+          "undefined undefined",
+          "Error",
+          "a b"
+        ],
+        "correct_answer": 0,
+        "explanation": "This is an example of object destructuring. It will extract 'a' and 'b' from 'obj' and log their values '1' and '2'."
+      },
+      {
+        "id": 68,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\nfunction outer() {\n  let counter = 0;\n  function inner() {\n    counter++;\n    return counter;\n  }\n  return inner;\n}\nconst countClosure = outer();\nconsole.log(countClosure());",
+        "options": [
+          "1",
+          "0",
+          "undefined",
+          "NaN"
+        ],
+        "correct_answer": 0,
+        "explanation": "The closure 'countClosure' maintains access to the 'counter' variable, and the first call to 'countClosure()' will return 1."
+      },
+      {
+        "id": 69,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\nfunction foo() {\n  return arguments[0];\n}\nconsole.log(foo(10));",
+        "options": [
+          "10",
+          "undefined",
+          "Error",
+          "arguments"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'arguments' object is an array-like object available inside all non-arrow functions, and 'arguments[0]' returns the first argument passed to 'foo'."
+      },
+      {
+        "id": 70,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nconst nums = [1, 2, 3];\nconsole.log(nums.reduce((acc, val) => acc + val, 0));",
+        "options": [
+          "1",
+          "6",
+          "undefined",
+          "NaN"
+        ],
+        "correct_answer": 1,
+        "explanation": "The 'reduce()' method applies a function to accumulate a single result. Here it adds all elements of 'nums', resulting in 6."
+      },
+      {
+        "id": 71,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nclass Person {\n  constructor(name, age) {\n    this.name = name;\n    this.age = age;\n  }\n  greet() {\n    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);\n  }\n}\nconst john = new Person('John', 30);\njohn.greet();",
+        "options": [
+          "Hello, my name is John and I am 30 years old.",
+          "undefined",
+          "Hello, my name is undefined and I am undefined years old.",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The class 'Person' has a constructor that sets 'name' and 'age'. When 'greet()' is called on 'john', it logs the greeting with the correct values."
+      },
+      {
+        "id": 72,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\nclass Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  speak() {\n    console.log(`${this.name} makes a sound.`);\n  }\n}\nclass Dog extends Animal {\n  speak() {\n    console.log(`${this.name} barks.`);\n  }\n}\nconst dog = new Dog('Buddy');\ndog.speak();",
+        "options": [
+          "Buddy makes a sound.",
+          "Buddy barks.",
+          "undefined",
+          "Error"
+        ],
+        "correct_answer": 1,
+        "explanation": "The 'Dog' class extends 'Animal' and overrides the 'speak()' method. When 'speak()' is called on the 'dog' object, it logs 'Buddy barks.'"
+      },
+      {
+        "id": 73,
+        "category": "Advanced",
+        "question": "What will be the output of the following code?\n\nclass Car {\n  constructor(make, model) {\n    this.make = make;\n    this.model = model;\n  }\n}\nconst myCar = new Car('Toyota', 'Corolla');\nconsole.log(myCar);",
+        "options": [
+          "Toyota Corolla",
+          "Car { make: 'Toyota', model: 'Corolla' }",
+          "undefined",
+          "Error"
+        ],
+        "correct_answer": 1,
+        "explanation": "The 'myCar' object is an instance of the 'Car' class, and when logged, it displays the object's properties."
+      },
+      {
+        "id": 74,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nclass Circle {\n  constructor(radius) {\n    this.radius = radius;\n  }\n  getArea() {\n    return Math.PI * Math.pow(this.radius, 2);\n  }\n}\nconst circle = new Circle(5);\nconsole.log(circle.getArea());",
+        "options": [
+          "31.41592653589793",
+          "5",
+          "15.707963267949466",
+          "undefined"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'getArea()' method computes the area of the circle using the formula π * radius^2. With a radius of 5, the area is approximately 31.415."
+      },
+      {
+        "id": 75,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nclass Person {\n  static greet() {\n    console.log('Hello from static method');\n  }\n}\nconst p = new Person();\np.greet();",
+        "options": [
+          "Hello from static method",
+          "TypeError",
+          "undefined",
+          "Error"
+        ],
+        "correct_answer": 1,
+        "explanation": "Static methods are called on the class itself, not on instances of the class. 'p.greet()' will throw a 'TypeError' because 'greet()' is static."
+      },
+      {
+        "id": 76,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\nconst obj = { name: 'Alice', age: 25 };\nconst { name, age } = obj;\nconsole.log(name, age);",
+        "options": [
+          "'Alice', 25",
+          "'Alice', undefined",
+          "undefined, undefined",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "This is an example of object destructuring. The values of 'name' and 'age' are extracted from 'obj', resulting in 'Alice' and 25."
+      },
+      {
+        "id": 77,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nclass Rectangle {\n  constructor(width, height) {\n    this.width = width;\n    this.height = height;\n  }\n  getArea() {\n    return this.width * this.height;\n  }\n}\nconst rect = new Rectangle(5, 10);\nconsole.log(rect.getArea());",
+        "options": [
+          "15",
+          "50",
+          "undefined",
+          "Error"
+        ],
+        "correct_answer": 1,
+        "explanation": "The 'getArea()' method calculates the area of the rectangle as width * height. For a width of 5 and height of 10, the area is 50."
+      },
+      {
+        "id": 78,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\nconst car = { make: 'Honda', model: 'Civic' };\nconst car2 = { ...car, year: 2020 };\nconsole.log(car2);",
+        "options": [
+          "{ make: 'Honda', model: 'Civic' }",
+          "{ make: 'Honda', model: 'Civic', year: 2020 }",
+          "Error",
+          "{ year: 2020 }"
+        ],
+        "correct_answer": 1,
+        "explanation": "The spread operator creates a shallow copy of the 'car' object and adds the 'year' property to the new 'car2' object."
+      },
+      {
+        "id": 79,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\nclass Person {\n  constructor(name) {\n    this.name = name;\n  }\n  getName() {\n    return this.name;\n  }\n}\nconst p = new Person('John');\nconsole.log(p.getName());",
+        "options": [
+          "'John'",
+          "'undefined'",
+          "'getName()'",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'getName()' method returns the 'name' property of the 'Person' instance. The output is 'John'."
+      },
+      {
+        "id": 80,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\nconst obj = { a: 1, b: 2 };\nconst newObj = Object.create(obj);\nnewObj.c = 3;\nconsole.log(newObj.a, newObj.b, newObj.c);",
+        "options": [
+          "1 2 3",
+          "undefined undefined 3",
+          "1 2 undefined",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'Object.create()' method creates a new object with 'obj' as its prototype. So, 'newObj' inherits 'a' and 'b' from 'obj', and has its own property 'c'."
+      },
+      {
+        "id": 81,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nclass Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  speak() {\n    console.log(`${this.name} makes a sound.`);\n  }\n}\nclass Dog extends Animal {\n  constructor(name, breed) {\n    super(name);\n    this.breed = breed;\n  }\n  speak() {\n    console.log(`${this.name} barks. It is a ${this.breed}.`);\n  }\n}\nconst dog = new Dog('Buddy', 'Golden Retriever');\ndog.speak();",
+        "options": [
+          "Buddy makes a sound.",
+          "Buddy barks. It is a Golden Retriever.",
+          "Buddy barks.",
+          "Error"
+        ],
+        "correct_answer": 1,
+        "explanation": "The 'Dog' class extends 'Animal' and overrides the 'speak()' method. The 'super(name)' call invokes the parent constructor, setting the 'name' property."
+      },
+      {
+        "id": 82,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\nclass Person {\n  constructor(name, age) {\n    this.name = name;\n    this.age = age;\n  }\n  greet() {\n    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);\n  }\n}\nclass Employee extends Person {\n  constructor(name, age, role) {\n    super(name, age);\n    this.role = role;\n  }\n  greet() {\n    super.greet();\n    console.log(`I work as a ${this.role}.`);\n  }\n}\nconst employee = new Employee('Alice', 30, 'Software Engineer');\nemployee.greet();",
+        "options": [
+          "Hello, my name is Alice and I am 30 years old. I work as a Software Engineer.",
+          "Hello, my name is Alice and I am 30 years old.",
+          "I work as a Software Engineer.",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'Employee' class extends 'Person', calls the parent 'greet()' method using 'super()', and then adds its own 'greet()' functionality."
+      },
+      {
+        "id": 83,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nclass Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  static describe() {\n    console.log('Animals are living creatures.');\n  }\n}\nclass Dog extends Animal {}\nDog.describe();",
+        "options": [
+          "Animals are living creatures.",
+          "undefined",
+          "Error",
+          "Dog is a type of animal."
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'describe()' method is static in the parent class 'Animal', and is inherited by the 'Dog' class. Static methods can be called on the class itself."
+      },
+      {
+        "id": 84,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\nclass Shape {\n  constructor(name) {\n    this.name = name;\n  }\n  describe() {\n    console.log(`I am a ${this.name}`);\n  }\n}\nclass Circle extends Shape {\n  constructor(radius) {\n    super('Circle');\n    this.radius = radius;\n  }\n  describe() {\n    super.describe();\n    console.log(`I have a radius of ${this.radius} units.`);\n  }\n}\nconst circle = new Circle(5);\ncircle.describe();",
+        "options": [
+          "I am a Circle. I have a radius of 5 units.",
+          "I am a Circle.",
+          "I have a radius of 5 units.",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'Circle' class extends 'Shape'. The 'describe()' method in 'Circle' calls the 'describe()' method in 'Shape' using 'super()', and then adds more details about the circle."
+      },
+      {
+        "id": 85,
+        "category": "Advanced",
+        "question": "What will be the output of the following code?\n\nclass Vehicle {\n  constructor(make, model) {\n    this.make = make;\n    this.model = model;\n  }\n  getInfo() {\n    return `${this.make} ${this.model}`;\n  }\n}\nclass Car extends Vehicle {\n  constructor(make, model, doors) {\n    super(make, model);\n    this.doors = doors;\n  }\n  getInfo() {\n    return `${super.getInfo()} with ${this.doors} doors`;\n  }\n}\nconst car = new Car('Toyota', 'Camry', 4);\nconsole.log(car.getInfo());",
+        "options": [
+          "Toyota Camry with 4 doors",
+          "Toyota Camry",
+          "Toyota Camry with undefined doors",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'Car' class extends 'Vehicle' and overrides the 'getInfo()' method. It calls the parent 'getInfo()' method using 'super()', then adds information about the number of doors."
+      },
+      {
+        "id": 86,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\nclass Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  speak() {\n    console.log(`${this.name} speaks.`);\n  }\n}\nclass Dog extends Animal {\n  speak() {\n    super.speak();\n    console.log(`${this.name} barks.`);\n  }\n}\nconst dog = new Dog('Rex');\ndog.speak();",
+        "options": [
+          "Rex speaks. Rex barks.",
+          "Rex barks.",
+          "Rex speaks.",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'Dog' class extends 'Animal' and overrides the 'speak()' method. The 'super.speak()' call invokes the parent method, and then the dog-specific behavior is added."
+      },
+      {
+        "id": 87,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\nclass Person {\n  constructor(name) {\n    this.name = name;\n  }\n  sayHello() {\n    console.log(`Hello, ${this.name}!`);\n  }\n}\nclass Student extends Person {\n  constructor(name, grade) {\n    super(name);\n    this.grade = grade;\n  }\n  sayHello() {\n    super.sayHello();\n    console.log(`I am in grade ${this.grade}.`);\n  }\n}\nconst student = new Student('Alice', 'A');\nstudent.sayHello();",
+        "options": [
+          "Hello, Alice! I am in grade A.",
+          "Hello, Alice!",
+          "I am in grade A.",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'Student' class extends 'Person' and overrides the 'sayHello()' method. It first calls the 'sayHello()' method from the parent class using 'super()', and then adds additional information about the grade."
+      },
+      {
+        "id": 88,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nclass Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  static greet() {\n    console.log('Hello, from Animal!');\n  }\n}\nclass Dog extends Animal {\n  static greet() {\n    super.greet();\n    console.log('Woof!');\n  }\n}\nDog.greet();",
+        "options": [
+          "Hello, from Animal! Woof!",
+          "Hello, from Animal!",
+          "Woof!",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The static 'greet()' method in the 'Dog' class calls the static 'greet()' method in the 'Animal' class using 'super.greet()', and then adds its own message 'Woof!'."
+      },
+      {
+        "id": 89,
+        "category": "Advanced",
+        "question": "What will be the output of the following code?\n\nclass Vehicle {\n  constructor(make, model) {\n    this.make = make;\n    this.model = model;\n  }\n  displayInfo() {\n    console.log(`Vehicle: ${this.make} ${this.model}`);\n  }\n}\nclass Car extends Vehicle {\n  constructor(make, model, color) {\n    super(make, model);\n    this.color = color;\n  }\n  displayInfo() {\n    super.displayInfo();\n    console.log(`Color: ${this.color}`);\n  }\n}\nconst car = new Car('Honda', 'Civic', 'Red');\ncar.displayInfo();",
+        "options": [
+          "Vehicle: Honda Civic Color: Red",
+          "Honda Civic Color: Red",
+          "Vehicle: Honda Civic",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'Car' class overrides the 'displayInfo()' method from 'Vehicle'. It calls the parent 'displayInfo()' method using 'super()', and then logs additional color information."
+      },
+      {
+        "id": 90,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nclass Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  static info() {\n    console.log('Animals are diverse creatures.');\n  }\n}\nclass Mammal extends Animal {\n  static info() {\n    super.info();\n    console.log('Mammals give birth to live young.');\n  }\n}\nMammal.info();",
+        "options": [
+          "Animals are diverse creatures. Mammals give birth to live young.",
+          "Animals are diverse creatures.",
+          "Mammals give birth to live young.",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The static 'info()' method in 'Mammal' calls the static method in 'Animal' using 'super.info()' and adds its own message about mammals."
+      },
+      {
+        "id": 91,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nclass Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  speak() {\n    console.log(`${this.name} makes a sound.`);\n  }\n}\nclass Dog extends Animal {\n  constructor(name, breed) {\n    super(name);\n    this.breed = breed;\n  }\n  speak() {\n    super.speak();\n    console.log(`${this.name} barks.`);\n  }\n}\nconst dog = new Dog('Buddy', 'Golden Retriever');\ndog.speak();",
+        "options": [
+          "Buddy makes a sound. Buddy barks.",
+          "Buddy barks.",
+          "Buddy makes a sound.",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'Dog' class extends 'Animal' and overrides the 'speak()' method. It calls the parent 'speak()' method using 'super()', then adds its own functionality."
+      },
+      {
+        "id": 92,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nclass Person {\n  constructor(name, age) {\n    this.name = name;\n    this.age = age;\n  }\n  getDetails() {\n    return `${this.name}, ${this.age} years old`; \n  }\n}\nclass Employee extends Person {\n  constructor(name, age, job) {\n    super(name, age);\n    this.job = job;\n  }\n  getDetails() {\n    return `${super.getDetails()} and works as a ${this.job}`;\n  }\n}\nconst emp = new Employee('John', 30, 'Software Developer');\nconsole.log(emp.getDetails());",
+        "options": [
+          "John, 30 years old and works as a Software Developer",
+          "John, 30 years old",
+          "John works as a Software Developer",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'Employee' class extends 'Person' and overrides the 'getDetails()' method. It uses 'super.getDetails()' to call the 'Person' class's method and adds additional information about the job."
+      },
+      {
+        "id": 93,
+        "category": "Intermediate",
+        "question": "What will the following code output?\n\nconst numbers = [1, 2, 3, 4, 5];\nnumbers.splice(2, 1, 6, 7);\nconsole.log(numbers);",
+        "options": [
+          "[1, 2, 6, 7, 4, 5]",
+          "[1, 2, 3, 6, 7, 4, 5]",
+          "[1, 6, 7, 2, 3, 4, 5]",
+          "[6, 7, 2, 3, 4, 5]"
+        ],
+        "correct_answer": 0,
+        "explanation": "The splice() method removes 1 element from index 2 and inserts 6 and 7 in its place. The updated array is [1, 2, 6, 7, 4, 5]."
+      },
+      {
+        "id": 94,
+        "category": "Intermediate",
+        "question": "Which of the following methods is used to add an element to the beginning of an array?\n\nconst arr = [2, 3, 4];",
+        "options": [
+          "arr.unshift(1);",
+          "arr.push(1);",
+          "arr.shift(1);",
+          "arr.pop(1);"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'unshift()' method adds one or more elements to the beginning of an array and returns the new length of the array."
+      },
+      {
+        "id": 95,
+        "category": "Intermediate",
+        "question": "What will the following code output?\n\nconst arr = [10, 20, 30];\nconst result = arr.map(x => x * 2);\nconsole.log(result);",
+        "options": [
+          "[20, 40, 60]",
+          "[10, 20, 30]",
+          "[2, 4, 6]",
+          "[5, 10, 15]"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'map()' method creates a new array by applying the function to each element of the array. Here, each element is multiplied by 2."
+      },
+      {
+        "id": 96,
+        "category": "Intermediate",
+        "question": "What is the time complexity of accessing an element by index in an array?\n\nconst arr = [10, 20, 30, 40, 50];",
+        "options": [
+          "O(1)",
+          "O(n)",
+          "O(log n)",
+          "O(n^2)"
+        ],
+        "correct_answer": 0,
+        "explanation": "Accessing an element by its index in an array is a constant-time operation, i.e., O(1)."
+      },
+      {
+        "id": 97,
+        "category": "Advanced",
+        "question": "Which of the following is true for a singly linked list?",
+        "options": [
+          "Each node points to the next node and the last node points to the first node.",
+          "Each node contains a reference to both the next and previous node.",
+          "Each node points only to the next node, and the last node points to null.",
+          "Each node points to null, and the first node points to the next node."
+        ],
+        "correct_answer": 2,
+        "explanation": "In a singly linked list, each node has a reference to the next node, and the last node's reference is null."
+      },
+      {
+        "id": 98,
+        "category": "Advanced",
+        "question": "What is the time complexity of inserting an element at the beginning of a singly linked list?",
+        "options": [
+          "O(1)",
+          "O(n)",
+          "O(log n)",
+          "O(n^2)"
+        ],
+        "correct_answer": 0,
+        "explanation": "Inserting at the beginning of a singly linked list is a constant-time operation, i.e., O(1)."
+      },
+      {
+        "id": 99,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\nfunction reverseLinkedList(head) {\n  let prev = null, current = head;\n  while (current) {\n    let next = current.next;\n    current.next = prev;\n    prev = current;\n    current = next;\n  }\n  return prev;\n}\n\nconst linkedList = { value: 1, next: { value: 2, next: { value: 3, next: null } } };\nconst reversedList = reverseLinkedList(linkedList);\nconsole.log(reversedList);",
+        "options": [
+          "{ value: 3, next: { value: 2, next: { value: 1, next: null } } }",
+          "{ value: 1, next: { value: 2, next: { value: 3, next: null } } }",
+          "{ value: 2, next: { value: 3, next: { value: 1, next: null } } }",
+          "null"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'reverseLinkedList()' function reverses the linked list by iterating through the nodes and reversing their 'next' pointers."
+      },
+      {
+        "id": 100,
+        "category": "Advanced",
+        "question": "Which of the following methods is used to merge two arrays into one array?\n\nconst arr1 = [1, 2, 3];\nconst arr2 = [4, 5, 6];",
+        "options": [
+          "arr1.concat(arr2);",
+          "arr1.merge(arr2);",
+          "arr1.add(arr2);",
+          "arr1.append(arr2);"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'concat()' method is used to merge two or more arrays. It returns a new array without modifying the original arrays."
+      },
+      {
+        "id": 101,
+        "category": "Advanced",
+        "question": "What is the time complexity of inserting an element at the end of a linked list?",
+        "options": [
+          "O(1)",
+          "O(n)",
+          "O(log n)",
+          "O(n^2)"
+        ],
+        "correct_answer": 1,
+        "explanation": "Inserting at the end of a singly linked list requires traversing the entire list to find the last node, resulting in O(n) time complexity."
+      },
+      {
+        "id": 102,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\nconst arr = [10, 20, 30, 40, 50];\nconst slicedArr = arr.slice(1, 4);\nconsole.log(slicedArr);",
+        "options": [
+          "[20, 30, 40]",
+          "[10, 20, 30, 40]",
+          "[20, 30, 40, 50]",
+          "[30, 40, 50]"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'slice()' method extracts a shallow copy of a portion of an array into a new array. It starts from index 1 and ends at index 4 (but does not include index 4)."
+      }
+    ]
+  }
+  
