@@ -1,5 +1,5 @@
 {
-    "data" : [
+    "data": [
         {
             "id": 1,
             "language": "JavaScript",
@@ -11,6 +11,19 @@
             "language": "Java",
             "path": "/java/java.json",
             "banner": "/assets/javaBanner.png"
+        },
+        {
+            "id": 3,
+            "language": "python",
+            "path": "/python/python.json",
+            "banner": "/assets/pythonBanner.png"
+        },
+        {
+            "id": 4,
+            "language": "c++",
+            "path": "/c++/c++.json",
+            "banner": "/assets/c++Banner.png"
         }
+        
     ]
 }

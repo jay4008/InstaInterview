@@ -1,0 +1,1304 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)",
+      "options": [
+        "[1, 2, 3]",
+        "[1, 2, 3, 4]",
+        "None",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "Lists in Python are mutable and are assigned by reference. Modifying 'y' will also modify 'x' since they refer to the same object."
+    },
+    {
+      "id": 2,
+      "category": "Advanced",
+      "question": "What does the following code output?\n\nx = 10\n\ndef func():\n    global x\n    x = x + 1\nfunc()\nprint(x)",
+      "options": [
+        "10",
+        "11",
+        "Error: UnboundLocalError",
+        "Error: SyntaxError"
+      ],
+      "correct_answer": 1,
+      "explanation": "The 'global' keyword allows the function to modify the global variable 'x'. The code increments 'x' to 11."
+    },
+    {
+      "id": 3,
+      "category": "Advanced",
+      "question": "What will the following code print?\n\nx = (1, 2, [3, 4])\nx[2][0] = 5\nprint(x)",
+      "options": [
+        "(1, 2, [5, 4])",
+        "(1, 2, [3, 4])",
+        "Error: Tuples are immutable",
+        "Error: TypeError"
+      ],
+      "correct_answer": 0,
+      "explanation": "While tuples themselves are immutable, they can hold mutable objects (like lists). Modifying the list inside the tuple is allowed."
+    },
+    {
+      "id": 4,
+      "category": "Advanced",
+      "question": "What will the following code print?\n\nx = [1, 2, 3, 4]\ny = [i**2 for i in x if i % 2 == 0]\nprint(y)",
+      "options": [
+        "[1, 4, 9, 16]",
+        "[4, 16]",
+        "[2, 4]",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "The list comprehension squares only the even numbers in 'x', resulting in '[4, 16]'."
+    },
+    {
+      "id": 5,
+      "category": "Advanced",
+      "question": "What does the following code output?\n\nx = lambda a=1, b=2: a + b\nprint(x(3))",
+      "options": [
+        "3",
+        "5",
+        "6",
+        "Error"
+      ],
+      "correct_answer": 2,
+      "explanation": "The lambda function has default arguments 'a=1' and 'b=2'. Calling 'x(3)' overrides 'a' to 3, making the result 3 + 2 = 5."
+    },
+    {
+      "id": 6,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = {1, 2, 3}\ny = {3, 4, 5}\nz = x & y\nprint(z)",
+      "options": [
+        "{1, 2, 3, 4, 5}",
+        "{3}",
+        "{1, 2}",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "The '&' operator finds the intersection of two sets. The only common element between 'x' and 'y' is '3'."
+    },
+    {
+      "id": 7,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\ndef func(a, b=[]):\n    b.append(a)\n    return b\n\nprint(func(1))\nprint(func(2))",
+      "options": [
+        "[1], [2]",
+        "[1], [1, 2]",
+        "[1], Error",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "Default mutable arguments like lists are shared across function calls. Each call modifies the same list, resulting in '[1]' and then '[1, 2]'."
+    },
+    {
+      "id": 8,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = [i for i in range(5) if i % 2 == 0]\nprint(x)",
+      "options": [
+        "[0, 2, 4]",
+        "[0, 1, 2, 3, 4]",
+        "[1, 3]",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "The list comprehension includes only even numbers from 0 to 4, resulting in '[0, 2, 4]'."
+    },
+    {
+      "id": 9,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = {1: 'a', 2: 'b', 3: 'c'}\nx[4] = 'd'\nprint(len(x))",
+      "options": [
+        "3",
+        "4",
+        "Error: Dictionaries are immutable",
+        "Error: SyntaxError"
+      ],
+      "correct_answer": 1,
+      "explanation": "Dictionaries are mutable. Adding a new key-value pair increases the length of the dictionary to 4."
+    },
+    {
+      "id": 10,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = (i for i in range(5))\nprint(next(x))\nprint(next(x))",
+      "options": [
+        "0, 1",
+        "1, 2",
+        "Error",
+        "0, Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "The generator 'x' produces numbers from 0 to 4 lazily. Each call to 'next()' retrieves the next value, starting from 0."
+    },
+    {
+      "id": 11,
+      "category": "Basic",
+      "question": "What is the output of the following code?\n\nx = 10\ny = 2\nprint(x // y)",
+      "options": [
+        "5.0",
+        "5",
+        "10",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "'//' is the floor division operator in Python. It divides and truncates the result to an integer, so the output is 5."
+    },
+    {
+      "id": 12,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = 'Python'\nprint(x[-1])",
+      "options": [
+        "'P'",
+        "'n'",
+        "'Python'",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "Negative indexing allows accessing elements from the end of a string. '-1' refers to the last character, which is 'n'."
+    },
+    {
+      "id": 13,
+      "category": "Basic",
+      "question": "Which of the following is a valid variable name in Python?",
+      "options": [
+        "1variable",
+        "_variable",
+        "variable-name",
+        "variable name"
+      ],
+      "correct_answer": 1,
+      "explanation": "Variable names in Python cannot start with a digit. '_variable' is valid because variables can start with an underscore."
+    },
+    {
+      "id": 14,
+      "category": "Advanced",
+      "question": "What is the output of the following code?\n\nx = [1, 2, 3, 4]\ny = x[:]\ny[0] = 0\nprint(x)",
+      "options": [
+        "[0, 2, 3, 4]",
+        "[1, 2, 3, 4]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 1,
+      "explanation": "Using slicing '[:]' creates a shallow copy of the list. Modifying 'y' does not affect 'x', so 'x' remains '[1, 2, 3, 4]'."
+    },
+    {
+      "id": 15,
+      "category": "Basic",
+      "question": "What does the 'len()' function return when used with a string?\n\nx = 'hello'\nprint(len(x))",
+      "options": [
+        "5",
+        "6",
+        "'hello'",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'len()' function returns the number of characters in the string, including spaces. 'hello' has 5 characters."
+    },
+    {
+      "id": 16,
+      "category": "Advanced",
+      "question": "What does the following code print?\n\nx = [1, 2, 3]\nx.extend([4, 5])\nprint(x)",
+      "options": [
+        "[1, 2, 3, 4, 5]",
+        "[1, 2, 3, [4, 5]]",
+        "[1, 2, 3, 4]",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'extend()' method adds elements from the provided iterable to the list, resulting in '[1, 2, 3, 4, 5]'."
+    },
+    {
+      "id": 17,
+      "category": "Basic",
+      "question": "What is the output of the following code?\n\nx = [1, 2, 3]\nx.append([4, 5])\nprint(len(x))",
+      "options": [
+        "5",
+        "4",
+        "3",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "'append()' adds the entire list '[4, 5]' as a single element to 'x', so the length becomes 4."
+    },
+    {
+      "id": 18,
+      "category": "Advanced",
+      "question": "What is the difference between 'is' and '==' in Python?",
+      "options": [
+        "'is' checks value equality, while '==' checks reference equality.",
+        "'is' checks reference equality, while '==' checks value equality.",
+        "Both are identical.",
+        "'is' works only for strings."
+      ],
+      "correct_answer": 1,
+      "explanation": "'is' checks whether two variables refer to the same object (reference equality), while '==' checks if the values are equal (value equality)."
+    },
+    {
+      "id": 19,
+      "category": "Basic",
+      "question": "What is the output of the following code?\n\nx = 'Hello'\ny = x.upper()\nprint(y)",
+      "options": [
+        "'hello'",
+        "'HELLO'",
+        "'Hello'",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "The 'upper()' method converts all characters in a string to uppercase, so 'HELLO' is printed."
+    },
+    {
+      "id": 20,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = {1, 2, 3, 4}\nx.add(3)\nprint(len(x))",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "Adding an element that already exists in a set does nothing, so the length of the set remains 4."
+    },
+    {
+      "id": 21,
+      "category": "Basic",
+      "question": "What will the following code output?\n\nx = 'Python'\nprint(x[0])",
+      "options": [
+        "'P'",
+        "'y'",
+        "'Python'",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "String indexing starts from 0. The character at index 0 in 'Python' is 'P'."
+    },
+    {
+      "id": 22,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = [1, 2, 3]\ny = [1, 2, 3]\nprint(x is y)",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 1,
+      "explanation": "'x' and 'y' have the same content but are different objects in memory. Therefore, 'x is y' evaluates to False."
+    },
+    {
+      "id": 23,
+      "category": "Basic",
+      "question": "What is the result of the following code?\n\nx = 5\ny = 10\nprint(x * y)",
+      "options": [
+        "15",
+        "50",
+        "510",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "The '*' operator performs multiplication. 5 * 10 equals 50."
+    },
+    {
+      "id": 24,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = {'a': 1, 'b': 2}\nprint(x.get('c', 3))",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "Error"
+      ],
+      "correct_answer": 2,
+      "explanation": "The 'get()' method returns the value for the key if it exists, otherwise it returns the default value provided (3 in this case)."
+    },
+    {
+      "id": 25,
+      "category": "Basic",
+      "question": "What does the following code print?\n\nx = 'hello'.capitalize()\nprint(x)",
+      "options": [
+        "'hello'",
+        "'Hello'",
+        "'HELLO'",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "The 'capitalize()' method converts the first character to uppercase and the rest to lowercase, so the output is 'Hello'."
+    },
+    {
+      "id": 26,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = [1, 2, 3]\nx.insert(1, 5)\nprint(x)",
+      "options": [
+        "[1, 5, 2, 3]",
+        "[1, 2, 3, 5]",
+        "[5, 1, 2, 3]",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'insert()' method inserts an element at the specified index. The list becomes '[1, 5, 2, 3]'."
+    },
+    {
+      "id": 27,
+      "category": "Basic",
+      "question": "What will the following code output?\n\nx = 5\ndef multiply(a):\n    return a * x\n\nprint(multiply(3))",
+      "options": [
+        "15",
+        "5",
+        "3",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "The function 'multiply' uses the global variable 'x'. The result is 3 * 5 = 15."
+    },
+    {
+      "id": 28,
+      "category": "Advanced",
+      "question": "What does the following code output?\n\nx = [[0] * 3] * 3\nx[0][0] = 1\nprint(x)",
+      "options": [
+        "[[1, 0, 0], [1, 0, 0], [1, 0, 0]]",
+        "[[1, 0, 0], [0, 0, 0], [0, 0, 0]]",
+        "[[0, 0, 0], [0, 0, 0], [1, 0, 0]]",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "The inner lists are references to the same object. Modifying one affects all of them, so all rows have '[1, 0, 0]'."
+    },
+    {
+      "id": 29,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = {'a': 1, 'b': 2}\nprint(x.keys())",
+      "options": [
+        "['a', 'b']",
+        "dict_keys(['a', 'b'])",
+        "Error",
+        "['1', '2']"
+      ],
+      "correct_answer": 1,
+      "explanation": "The 'keys()' method returns a view object, which is displayed as 'dict_keys(['a', 'b'])'."
+    },
+    {
+      "id": 30,
+      "category": "Advanced",
+      "question": "What is the output of the following code?\n\nx = (1, 2, 3)\ny = (1, 2, 3)\nprint(x is y)",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "Immutable objects like tuples with the same values may share the same memory reference in Python, so 'x is y' can evaluate to True."
+    },
+    {
+      "id": 31,
+      "category": "Basic",
+      "question": "What will the following code output?\n\nx = [1, 2, 3]\nprint(len(x))",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'len()' function returns the number of elements in the list. Here, the list contains 3 elements, so the output is 3."
+    },
+    {
+      "id": 32,
+      "category": "Advanced",
+      "question": "What is the output of this code snippet?\n\nx = [1, 2, 3]\nprint(x[3])",
+      "options": [
+        "None",
+        "3",
+        "Error",
+        "[1, 2, 3]"
+      ],
+      "correct_answer": 2,
+      "explanation": "Indexing in Python is zero-based. Accessing index 3 in a list of length 3 raises an IndexError."
+    },
+    {
+      "id": 33,
+      "category": "Basic",
+      "question": "What is the result of the following code?\n\nx = [1, 2, 3]\nprint(2 in x)",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'in' operator checks for membership. Since 2 is in the list 'x', the output is True."
+    },
+    {
+      "id": 34,
+      "category": "Advanced",
+      "question": "What does the following code output?\n\nx = lambda a, b: a + b\nprint(x(3, 4))",
+      "options": [
+        "7",
+        "34",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The lambda function adds the two arguments passed to it. Here, 3 + 4 equals 7."
+    },
+    {
+      "id": 35,
+      "category": "Basic",
+      "question": "What will the following code output?\n\nx = [1, 2, 3, 4]\nprint(x[-2])",
+      "options": [
+        "3",
+        "4",
+        "2",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "Negative indexing starts from the end of the list. '-2' refers to the second-to-last element, which is 3."
+    },
+    {
+      "id": 36,
+      "category": "Advanced",
+      "question": "What will this code print?\n\nx = [1, 2, 3]\ny = x\nx[0] = 0\nprint(y)",
+      "options": [
+        "[0, 2, 3]",
+        "[1, 2, 3]",
+        "[0, 1, 2, 3]",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "Assigning 'y = x' makes 'y' a reference to the same object as 'x'. Any changes to 'x' are reflected in 'y'."
+    },
+    {
+      "id": 37,
+      "category": "Basic",
+      "question": "What does the following code output?\n\nx = 'Python'\nprint(x[:3])",
+      "options": [
+        "'Pyt'",
+        "'hon'",
+        "'Python'",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "Slicing with '[:3]' extracts characters from the start up to (but not including) index 3, resulting in 'Pyt'."
+    },
+    {
+      "id": 38,
+      "category": "Advanced",
+      "question": "What is the output of the following code?\n\nx = [1, 2, 3]\ny = [x, x]\nx[0] = 99\nprint(y)",
+      "options": [
+        "[[99, 2, 3], [99, 2, 3]]",
+        "[[1, 2, 3], [1, 2, 3]]",
+        "[[99, 2, 3], [1, 2, 3]]",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "The list 'y' contains two references to the same list 'x'. Changing 'x[0]' updates both sublists in 'y'."
+    },
+    {
+      "id": 39,
+      "category": "Basic",
+      "question": "What will the following code output?\n\nx = [1, 2, 3, 4]\nprint(x[1:3])",
+      "options": [
+        "[1, 2, 3]",
+        "[2, 3]",
+        "[3, 4]",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "The slice '[1:3]' extracts elements from index 1 to 3 (excluding index 3), resulting in '[2, 3]'."
+    },
+    {
+      "id": 40,
+      "category": "Advanced",
+      "question": "What is the output of the following code?\n\ndef func(x=[]):\n    x.append(1)\n    return x\n\nprint(func())\nprint(func())",
+      "options": [
+        "[1], [1]",
+        "[1], [1, 1]",
+        "[1, 1], [1]",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "The default value for 'x' is mutable. The same list persists across calls to 'func()', so the second call appends another '1', resulting in '[1], [1, 1]'."
+    },
+    {
+      "id": 41,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = [1, 2, 3]\ny = x[:]\ny[0] = 99\nprint(x)",
+      "options": [
+        "[1, 2, 3]",
+        "[99, 2, 3]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The slice 'x[:]' creates a shallow copy of the list. Modifying 'y' does not affect 'x', so 'x' remains '[1, 2, 3]'."
+    },
+    {
+      "id": 42,
+      "category": "Basic",
+      "question": "What is the output of the following code?\n\nx = (1, 2, 3)\nx += (4,)\nprint(x)",
+      "options": [
+        "(1, 2, 3, 4)",
+        "(1, 2, 3)",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "Tuples are immutable, but concatenation creates a new tuple. The result is '(1, 2, 3, 4)'."
+    },
+    {
+      "id": 43,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = {'a': 1, 'b': 2}\ny = x.copy()\ny['c'] = 3\nprint(x)",
+      "options": [
+        "{'a': 1, 'b': 2}",
+        "{'a': 1, 'b': 2, 'c': 3}",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'copy()' method creates a shallow copy of the dictionary. Modifying 'y' does not affect 'x', so 'x' remains unchanged."
+    },
+    {
+      "id": 44,
+      "category": "Basic",
+      "question": "What is the output of the following code?\n\nx = 'hello'\nprint(x * 3)",
+      "options": [
+        "'hellohellohello'",
+        "'hello'",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The '*' operator repeats the string. Here, 'hello' is repeated 3 times, resulting in 'hellohellohello'."
+    },
+    {
+      "id": 45,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\ndef func(a, b, c, d):\n    return a + b + c + d\n\nx = [1, 2, 3, 4]\nprint(func(*x))",
+      "options": [
+        "10",
+        "[1, 2, 3, 4]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The unpacking operator '*' unpacks the list into individual arguments for the function. The sum is 1 + 2 + 3 + 4 = 10."
+    },
+    {
+      "id": 46,
+      "category": "Basic",
+      "question": "What does the following code output?\n\nx = {'a': 1, 'b': 2}\nprint('c' in x)",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 1,
+      "explanation": "The 'in' operator checks if the key 'c' exists in the dictionary. Since it does not, the output is False."
+    },
+    {
+      "id": 47,
+      "category": "Advanced",
+      "question": "What will this code output?\n\nx = [1, [2, 3], 4]\ny = x[:]\ny[1][0] = 99\nprint(x)",
+      "options": [
+        "[1, [99, 3], 4]",
+        "[1, [2, 3], 4]",
+        "[1, [99, 3, 4], 4]",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "A shallow copy only copies the outer list. The inner list is still a shared reference, so modifying 'y[1][0]' affects 'x'."
+    },
+    {
+      "id": 48,
+      "category": "Basic",
+      "question": "What is the output of the following code?\n\nx = range(5)\nprint(list(x))",
+      "options": [
+        "[0, 1, 2, 3, 4]",
+        "[1, 2, 3, 4, 5]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'range(5)' generates numbers from 0 to 4. Converting it to a list gives '[0, 1, 2, 3, 4]'."
+    },
+    {
+      "id": 49,
+      "category": "Advanced",
+      "question": "What does the following code output?\n\nx = [i * i for i in range(3)]\nprint(x)",
+      "options": [
+        "[0, 1, 4]",
+        "[0, 1, 2]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "This is a list comprehension that squares each number in the range. The output is '[0, 1, 4]'."
+    },
+    {
+      "id": 50,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = [1, 2, 3]\ndef func(a):\n    a.append(4)\n\nfunc(x)\nprint(x)",
+      "options": [
+        "[1, 2, 3, 4]",
+        "[1, 2, 3]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "Lists are mutable, so passing 'x' to 'func' modifies it in place. The output is '[1, 2, 3, 4]'."
+    },
+    {
+      "id": 51,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = (1, 2, 3)\nx[0] = 0\nprint(x)",
+      "options": [
+        "(0, 2, 3)",
+        "Error",
+        "(1, 2, 3)",
+        "None"
+      ],
+      "correct_answer": 1,
+      "explanation": "Tuples are immutable in Python. Attempting to modify a tuple element raises a TypeError."
+    },
+    {
+      "id": 52,
+      "category": "Basic",
+      "question": "What is the output of the following code?\n\nx = [i for i in range(5) if i % 2 == 0]\nprint(x)",
+      "options": [
+        "[0, 1, 2, 3, 4]",
+        "[0, 2, 4]",
+        "[1, 3, 5]",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "The list comprehension filters numbers from 0 to 4, keeping only even numbers. The result is '[0, 2, 4]'."
+    },
+    {
+      "id": 53,
+      "category": "Advanced",
+      "question": "What does the following code output?\n\nx = {1, 2, 3}\nx.add(3)\nprint(len(x))",
+      "options": [
+        "3",
+        "4",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "Sets in Python do not allow duplicate elements. Adding 3 again does not change the set, so its length remains 3."
+    },
+    {
+      "id": 54,
+      "category": "Basic",
+      "question": "What will the following code output?\n\nx = {'a': 1, 'b': 2}\nx.update({'b': 3, 'c': 4})\nprint(x)",
+      "options": [
+        "{'a': 1, 'b': 2, 'c': 4}",
+        "{'a': 1, 'b': 3, 'c': 4}",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 1,
+      "explanation": "The 'update()' method adds new key-value pairs and overwrites existing keys. The result is '{'a': 1, 'b': 3, 'c': 4}'."
+    },
+    {
+      "id": 55,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\ndef func(x=[]):\n    x.append(len(x))\n    return x\n\nprint(func())\nprint(func())",
+      "options": [
+        "[0], [1]",
+        "[0, 1], [0, 1]",
+        "[0], [0, 1]",
+        "Error"
+      ],
+      "correct_answer": 2,
+      "explanation": "Default mutable arguments retain their state across function calls. The list 'x' is modified in the first call and persists for subsequent calls."
+    },
+    {
+      "id": 56,
+      "category": "Basic",
+      "question": "What is the result of the following code?\n\nx = [1, 2, 3]\ny = [4, 5]\nz = x + y\nprint(z)",
+      "options": [
+        "[1, 2, 3, 4, 5]",
+        "[1, 2, 3][4, 5]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The '+' operator concatenates two lists. The result is a new list containing all elements from both lists."
+    },
+    {
+      "id": 57,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = {i: i*i for i in range(3)}\nprint(x)",
+      "options": [
+        "{0: 0, 1: 1, 2: 4}",
+        "{0: 0, 1: 2, 2: 3}",
+        "[0, 1, 4]",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "This is a dictionary comprehension. It generates a dictionary where keys are numbers from 0 to 2 and values are their squares."
+    },
+    {
+      "id": 58,
+      "category": "Basic",
+      "question": "What will this code output?\n\nx = 'Python'\nprint(x[::-1])",
+      "options": [
+        "'nohtyP'",
+        "'Python'",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The slicing '[::-1]' reverses the string. The result is 'nohtyP'."
+    },
+    {
+      "id": 59,
+      "category": "Advanced",
+      "question": "What is the output of the following code?\n\ndef func(x):\n    return [i for i in x if i % 2 == 0]\n\nprint(func(range(10)))",
+      "options": [
+        "[0, 2, 4, 6, 8]",
+        "[1, 3, 5, 7, 9]",
+        "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "The function uses a list comprehension to filter even numbers from the input range. The output is '[0, 2, 4, 6, 8]'."
+    },
+    {
+      "id": 60,
+      "category": "Advanced",
+      "question": "What does the following code output?\n\nx = [1, 2, 3]\nprint(x * 2)",
+      "options": [
+        "[1, 2, 3, 1, 2, 3]",
+        "[1, 2, 3, 3, 2, 1]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The '*' operator repeats the list. Here, '[1, 2, 3]' is repeated twice, resulting in '[1, 2, 3, 1, 2, 3]'."
+    },
+    {
+      "id": 61,
+      "category": "Basic",
+      "question": "What does the following code output?\n\nx = [1, 2, 3]\nprint(x[-1])",
+      "options": [
+        "1",
+        "3",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 1,
+      "explanation": "The index '-1' refers to the last element of the list. The output is 3."
+    },
+    {
+      "id": 62,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = [1, 2, 3]\ny = (1, 2, 3)\nz = x == y\nprint(z)",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 1,
+      "explanation": "A list is not equal to a tuple, even if their elements are identical. The result is False."
+    },
+    {
+      "id": 63,
+      "category": "Basic",
+      "question": "What does the following code output?\n\nx = [i for i in range(4)]\nprint(x)",
+      "options": [
+        "[0, 1, 2, 3]",
+        "[1, 2, 3, 4]",
+        "[0, 1, 2, 3, 4]",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "The list comprehension generates a list of numbers from 0 to 3. The result is '[0, 1, 2, 3]'."
+    },
+    {
+      "id": 64,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = {i: i + 1 for i in range(3)}\nprint(x.get(2))",
+      "options": [
+        "3",
+        "2",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The dictionary comprehension creates a mapping from each number to its increment. 'x.get(2)' returns 3."
+    },
+    {
+      "id": 65,
+      "category": "Basic",
+      "question": "What will the following code output?\n\nx = [1, 2, 3, 4]\nprint(x[1:3])",
+      "options": [
+        "[1, 2]",
+        "[2, 3]",
+        "[3, 4]",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "The slicing '[1:3]' includes elements at indices 1 and 2. The result is '[2, 3]'."
+    },
+    {
+      "id": 66,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = [1, 2, 3]\nprint(all(x))",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'all()' function checks if all elements are truthy. Since all elements in the list are non-zero, the result is True."
+    },
+    {
+      "id": 67,
+      "category": "Basic",
+      "question": "What does the following code output?\n\nx = 'Python'\nprint(x[:3])",
+      "options": [
+        "'Pyt'",
+        "'Pyth'",
+        "'Python'",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "The slicing '[:3]' selects the first three characters of the string. The result is 'Pyt'."
+    },
+    {
+      "id": 68,
+      "category": "Advanced",
+      "question": "What does the following code output?\n\nx = [1, 2, 3]\nprint(any(x))",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'any()' function returns True if any element in the list is truthy. Since all elements are non-zero, the result is True."
+    },
+    {
+      "id": 69,
+      "category": "Basic",
+      "question": "What does the following code output?\n\nx = {'a': 1, 'b': 2}\nx['c'] = 3\nprint(x)",
+      "options": [
+        "{'a': 1, 'b': 2}",
+        "{'a': 1, 'b': 2, 'c': 3}",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 1,
+      "explanation": "The key-value pair 'c: 3' is added to the dictionary. The result is '{'a': 1, 'b': 2, 'c': 3}'."
+    },
+    {
+      "id": 70,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = lambda a, b: a * b\nprint(x(3, 4))",
+      "options": [
+        "12",
+        "7",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The lambda function multiplies its two arguments. The result is 3 * 4 = 12."
+    },
+    {
+      "id": 71,
+      "category": "Advanced",
+      "question": "What is the output of the following code?\n\nx = [1, 2, 3, 4]\ny = x.pop(2)\nprint(y, x)",
+      "options": [
+        "3 [1, 2, 4]",
+        "4 [1, 2, 3]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'pop()' method removes and returns the element at index 2 (value 3). The remaining list is '[1, 2, 4]'."
+    },
+    {
+      "id": 72,
+      "category": "Basic",
+      "question": "What does the following code output?\n\nx = 'abcd'\nprint(len(x))",
+      "options": [
+        "3",
+        "4",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 1,
+      "explanation": "The 'len()' function returns the number of characters in the string. The result is 4."
+    },
+    {
+      "id": 73,
+      "category": "Advanced",
+      "question": "What is the output of the following code?\n\nx = [1, 2, 3]\ny = x.copy()\nx[0] = 0\nprint(x, y)",
+      "options": [
+        "[0, 2, 3] [1, 2, 3]",
+        "[0, 2, 3] [0, 2, 3]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'copy()' method creates a shallow copy of the list. Modifying 'x' does not affect 'y'."
+    },
+    {
+      "id": 74,
+      "category": "Basic",
+      "question": "What does the following code output?\n\nx = {1, 2, 3}\nprint(len(x))",
+      "options": [
+        "2",
+        "3",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 1,
+      "explanation": "The 'len()' function returns the number of elements in the set. The result is 3."
+    },
+    {
+      "id": 75,
+      "category": "Advanced",
+      "question": "What is the output of the following code?\n\nx = 'abcd'\nprint(x[::-1])",
+      "options": [
+        "'abcd'",
+        "'dcba'",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 1,
+      "explanation": "The slicing '[::-1]' reverses the string. The result is 'dcba'."
+    },
+    {
+      "id": 76,
+      "category": "Basic",
+      "question": "What does the following code output?\n\nx = [1, 2, 3]\nprint(2 in x)",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'in' operator checks for membership. Since 2 is in the list, the result is True."
+    },
+    {
+      "id": 77,
+      "category": "Advanced",
+      "question": "What does the following code output?\n\nx = {1, 2, 3} | {3, 4, 5}\nprint(x)",
+      "options": [
+        "{1, 2, 3, 4, 5}",
+        "{3}",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The '|' operator performs a union of two sets. The result is '{1, 2, 3, 4, 5}'."
+    },
+    {
+      "id": 78,
+      "category": "Basic",
+      "question": "What does the following code output?\n\nx = [1, 2, 3]\nprint(len(x))",
+      "options": [
+        "3",
+        "4",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'len()' function returns the number of elements in the list. The result is 3."
+    },
+    {
+      "id": 79,
+      "category": "Advanced",
+      "question": "What does the following code output?\n\nx = {1, 2, 3} & {2, 3, 4}\nprint(x)",
+      "options": [
+        "{2, 3}",
+        "{1, 4}",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The '&' operator performs an intersection of two sets. The result is '{2, 3}'."
+    },
+    {
+      "id": 80,
+      "category": "Advanced",
+      "question": "What is the output of the following code?\n\nx = {i: i**2 for i in range(4)}\nprint(x[2])",
+      "options": [
+        "4",
+        "2",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The dictionary comprehension creates a dictionary with keys as numbers and values as their squares. 'x[2]' returns 4."
+    },
+    {
+      "id": 81,
+      "category": "Basic",
+      "question": "What is the output of the following code?\n\nx = [1, 2, 3]\nprint(x * 2)",
+      "options": [
+        "[1, 2, 3, 1, 2, 3]",
+        "[1, 2, 3, 2, 4, 6]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The multiplication operator '*' repeats the list elements. The result is '[1, 2, 3, 1, 2, 3]'."
+    },
+    {
+      "id": 82,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = [[0]*3]*3\nx[0][0] = 1\nprint(x)",
+      "options": [
+        "[[1, 0, 0], [0, 0, 0], [0, 0, 0]]",
+        "[[1, 0, 0], [1, 0, 0], [1, 0, 0]]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 1,
+      "explanation": "The inner lists are references to the same object. Modifying one element affects all rows. The result is '[[1, 0, 0], [1, 0, 0], [1, 0, 0]]'."
+    },
+    {
+      "id": 83,
+      "category": "Basic",
+      "question": "What is the output of the following code?\n\nx = {1, 2, 3}\nx.add(4)\nprint(x)",
+      "options": [
+        "{1, 2, 3, 4}",
+        "[1, 2, 3, 4]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'add()' method adds an element to the set. The result is '{1, 2, 3, 4}'."
+    },
+    {
+      "id": 84,
+      "category": "Advanced",
+      "question": "What does the following code output?\n\nx = 'Python'\ndef reverse(s):\n    return s[::-1]\nprint(reverse(x))",
+      "options": [
+        "'nohtyP'",
+        "'Python'",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The slicing '[::-1]' reverses the string. The result is 'nohtyP'."
+    },
+    {
+      "id": 85,
+      "category": "Basic",
+      "question": "What is the output of the following code?\n\nx = {'a': 1, 'b': 2}\nprint(x.keys())",
+      "options": [
+        "['a', 'b']",
+        "dict_keys(['a', 'b'])",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 1,
+      "explanation": "The 'keys()' method returns a view object of the dictionary keys, which is printed as 'dict_keys(['a', 'b'])'."
+    },
+    {
+      "id": 86,
+      "category": "Advanced",
+      "question": "What is the output of the following code?\n\nx = [1, 2, 3]\ny = [i**2 for i in x]\nprint(y)",
+      "options": [
+        "[1, 4, 9]",
+        "[2, 4, 6]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The list comprehension generates squares of elements in 'x'. The result is '[1, 4, 9]'."
+    },
+    {
+      "id": 87,
+      "category": "Basic",
+      "question": "What does the following code output?\n\nx = 'Hello'\nprint(x.upper())",
+      "options": [
+        "'HELLO'",
+        "'hello'",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'upper()' method converts all characters to uppercase. The result is 'HELLO'."
+    },
+    {
+      "id": 88,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = {'a': 1, 'b': 2}\nprint(x.get('c', 0))",
+      "options": [
+        "1",
+        "0",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 1,
+      "explanation": "The 'get()' method returns the value of the key if it exists, or the default value (0) if the key is not found."
+    },
+    {
+      "id": 89,
+      "category": "Basic",
+      "question": "What is the output of the following code?\n\nx = [1, 2, 3, 4]\ny = x[1:3]\nprint(y)",
+      "options": [
+        "[2, 3]",
+        "[1, 2]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The slicing '[1:3]' selects elements at indices 1 and 2. The result is '[2, 3]'."
+    },
+    {
+      "id": 90,
+      "category": "Advanced",
+      "question": "What does the following code output?\n\nx = [1, 2, 3]\ny = (i for i in x)\nprint(next(y))",
+      "options": [
+        "1",
+        "2",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The generator expression creates a generator object. The 'next()' function retrieves the first element, which is 1."
+    },
+    {
+      "id": 91,
+      "category": "Basic",
+      "question": "What does the following code output?\n\nx = [1, 2, 3]\nprint(max(x))",
+      "options": [
+        "3",
+        "2",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'max()' function returns the largest element in the list. The result is 3."
+    },
+    {
+      "id": 92,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = 'Python'\ndef modify(s):\n    s = s.lower()\nmodify(x)\nprint(x)",
+      "options": [
+        "'Python'",
+        "'python'",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "Strings are immutable in Python. Modifying 's' inside the function does not affect 'x'. The result is 'Python'."
+    },
+    {
+      "id": 93,
+      "category": "Basic",
+      "question": "What is the output of the following code?\n\nx = [1, 2, 3, 4]\nx.reverse()\nprint(x)",
+      "options": [
+        "[4, 3, 2, 1]",
+        "[1, 2, 3, 4]",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'reverse()' method reverses the list in place. The result is '[4, 3, 2, 1]'."
+    },
+    {
+      "id": 94,
+      "category": "Advanced",
+      "question": "What does the following code output?\n\nx = 1\ndef outer():\n    x = 2\n    def inner():\n        nonlocal x\n        x = 3\n    inner()\n    return x\nprint(outer())",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "Error"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'nonlocal' keyword allows modification of the variable in the enclosing scope. The result is 3."
+    },
+    {
+      "id": 95,
+      "category": "Basic",
+      "question": "What does the following code output?\n\nx = 'Python'\nprint(len(x))",
+      "options": [
+        "5",
+        "6",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 1,
+      "explanation": "The 'len()' function returns the number of characters in the string. The result is 6."
+    },
+    {
+      "id": 96,
+      "category": "Advanced",
+      "question": "What is the output of the following code?\n\nx = {i: i+1 for i in range(3)}\nx.pop(1)\nprint(x)",
+      "options": [
+        "{0: 1, 2: 3}",
+        "{1: 2, 2: 3}",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'pop()' method removes the key-value pair with the specified key. The result is '{0: 1, 2: 3}'."
+    },
+    {
+      "id": 97,
+      "category": "Basic",
+      "question": "What does the following code output?\n\nx = [1, 2, 3]\nprint(x[-2])",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "Error"
+      ],
+      "correct_answer": 1,
+      "explanation": "The index '-2' refers to the second-to-last element of the list. The result is 2."
+    },
+    {
+      "id": 98,
+      "category": "Advanced",
+      "question": "What will the following code output?\n\nx = []\nprint(all(x))",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'all()' function returns True for an empty iterable because there are no false elements."
+    },
+    {
+      "id": 99,
+      "category": "Basic",
+      "question": "What is the output of the following code?\n\nx = {1, 2, 3}\nx.discard(2)\nprint(x)",
+      "options": [
+        "{1, 3}",
+        "{2, 3}",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'discard()' method removes the element from the set if it exists. The result is '{1, 3}'."
+    },
+    {
+      "id": 100,
+      "category": "Advanced",
+      "question": "What does the following code output?\n\nx = [1, 2, 3]\ny = iter(x)\nprint(next(y))",
+      "options": [
+        "1",
+        "2",
+        "Error",
+        "None"
+      ],
+      "correct_answer": 0,
+      "explanation": "The 'iter()' function creates an iterator. The 'next()' function retrieves the first element, which is 1."
+    }
+  ]
+}

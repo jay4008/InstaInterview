@@ -1,0 +1,1305 @@
+{
+    "quiz": [
+      {
+        "id": 1,
+        "category": "Basic",
+        "question": "Which of the following is a valid way to declare an integer in C++?",
+        "options": [
+          "int x = 10;",
+          "integer x = 10;",
+          "x = 10;",
+          "var x = 10;"
+        ],
+        "correct_answer": 0,
+        "explanation": "The correct way to declare an integer in C++ is 'int x = 10;'."
+      },
+      {
+        "id": 2,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int a = 5, b = 2;\n    cout << a / b << endl;\n    return 0;\n}",
+        "options": [
+          "2",
+          "2.5",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "In C++, dividing two integers results in integer division. The output is '2'."
+      },
+      {
+        "id": 3,
+        "category": "Basic",
+        "question": "Which header file is required to use the 'cout' object?",
+        "options": [
+          "<iostream>",
+          "<stdio.h>",
+          "<fstream>",
+          "<cstring>"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'iostream' header file includes the definition for 'cout'."
+      },
+      {
+        "id": 4,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int x = 10;\n    int &y = x;\n    y = 20;\n    cout << x << endl;\n    return 0;\n}",
+        "options": [
+          "20",
+          "10",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The reference 'y' modifies the original variable 'x'. Therefore, the output is '20'."
+      },
+      {
+        "id": 5,
+        "category": "Basic",
+        "question": "What will the following code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int a = 5;\n    if (a > 3) {\n        cout << \"True\" << endl;\n    }\n    return 0;\n}",
+        "options": [
+          "True",
+          "False",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The condition 'a > 3' is true, so the program outputs 'True'."
+      },
+      {
+        "id": 6,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int arr[] = {1, 2, 3};\n    cout << *(arr + 1) << endl;\n    return 0;\n}",
+        "options": [
+          "2",
+          "1",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The expression '*(arr + 1)' accesses the second element of the array, which is '2'."
+      },
+      {
+        "id": 7,
+        "category": "Basic",
+        "question": "Which of the following correctly creates a pointer to an integer?",
+        "options": [
+          "int *p = &x;",
+          "int p = &x;",
+          "int &p = &x;",
+          "int *p = x;"
+        ],
+        "correct_answer": 0,
+        "explanation": "The syntax 'int *p = &x;' correctly declares a pointer to an integer."
+      },
+      {
+        "id": 8,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n    virtual void show() {\n        cout << \"Base\" << endl;\n    }\n};\nclass Derived : public Base {\npublic:\n    void show() override {\n        cout << \"Derived\" << endl;\n    }\n};\nint main() {\n    Base *b = new Derived();\n    b->show();\n    return 0;\n}",
+        "options": [
+          "Derived",
+          "Base",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "Due to runtime polymorphism and the 'virtual' keyword, the derived class method is called. The output is 'Derived'."
+      },
+      {
+        "id": 9,
+        "category": "Basic",
+        "question": "Which operator is used to access members of a structure through a pointer?",
+        "options": [
+          "->",
+          ".",
+          "&",
+          "*"
+        ],
+        "correct_answer": 0,
+        "explanation": "The '->' operator is used to access members of a structure or class through a pointer."
+      },
+      {
+        "id": 10,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int a = 5;\n    cout << (a << 1) << endl;\n    return 0;\n}",
+        "options": [
+          "10",
+          "5",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The left shift operator '<<' shifts the bits of 'a' to the left by one position, equivalent to multiplying by 2. The result is '10'."
+      },
+      {
+        "id": 11,
+        "category": "Basic",
+        "question": "Which of the following correctly initializes a vector in C++?",
+        "options": [
+          "vector<int> v = {1, 2, 3};",
+          "vector v = {1, 2, 3};",
+          "vector<int> v(1, 2, 3);",
+          "int vector v = {1, 2, 3};"
+        ],
+        "correct_answer": 0,
+        "explanation": "The correct syntax to initialize a vector is 'vector<int> v = {1, 2, 3};'."
+      },
+      {
+        "id": 12,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int arr[] = {10, 20, 30};\n    cout << sizeof(arr) / sizeof(arr[0]) << endl;\n    return 0;\n}",
+        "options": [
+          "3",
+          "1",
+          "10",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The total size of the array is divided by the size of one element to get the number of elements, which is 3."
+      },
+      {
+        "id": 13,
+        "category": "Basic",
+        "question": "Which C++ keyword is used to handle exceptions?",
+        "options": [
+          "try",
+          "catch",
+          "throw",
+          "All of the above"
+        ],
+        "correct_answer": 3,
+        "explanation": "Exception handling in C++ uses 'try', 'catch', and 'throw'."
+      },
+      {
+        "id": 14,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int a = 10, b = 15;\n    cout << (a ^ b) << endl;\n    return 0;\n}",
+        "options": [
+          "5",
+          "25",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The XOR operator '^' computes the bitwise XOR, and for 10 and 15, the result is 5."
+      },
+      {
+        "id": 15,
+        "category": "Basic",
+        "question": "Which type of inheritance is demonstrated in the following code?\n\nclass A {};\nclass B : public A {};",
+        "options": [
+          "Single",
+          "Multiple",
+          "Multilevel",
+          "Hierarchical"
+        ],
+        "correct_answer": 0,
+        "explanation": "A single class inherits from another class, demonstrating single inheritance."
+      },
+      {
+        "id": 16,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int x = 5;\n    int y = ++x + x++;\n    cout << y << endl;\n    return 0;\n}",
+        "options": [
+          "12",
+          "13",
+          "11",
+          "Error"
+        ],
+        "correct_answer": 1,
+        "explanation": "'++x' increments first, making x = 6. 'x++' uses x before incrementing, so the result is 6 + 7 = 13."
+      },
+      {
+        "id": 17,
+        "category": "Basic",
+        "question": "Which of the following is a correct syntax for defining a class in C++?",
+        "options": [
+          "class MyClass {};",
+          "class MyClass() {};",
+          "class MyClass[] {};",
+          "MyClass class {}; "
+        ],
+        "correct_answer": 0,
+        "explanation": "The correct syntax for defining a class is 'class MyClass {};'."
+      },
+      {
+        "id": 18,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    string s = \"hello\";\n    s[1] = 'a';\n    cout << s << endl;\n    return 0;\n}",
+        "options": [
+          "hallo",
+          "hello",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "String characters can be modified directly by index. 'e' is replaced by 'a', resulting in 'hallo'."
+      },
+      {
+        "id": 19,
+        "category": "Basic",
+        "question": "What is the correct way to define a constant in C++?",
+        "options": [
+          "const int x = 10;",
+          "#define X 10",
+          "Both",
+          "None"
+        ],
+        "correct_answer": 2,
+        "explanation": "Both 'const' and '#define' can be used to define constants in C++."
+      },
+      {
+        "id": 20,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\ntemplate <typename T>\nT add(T a, T b) {\n    return a + b;\n}\nint main() {\n    cout << add(2, 3) << endl;\n    return 0;\n}",
+        "options": [
+          "5",
+          "2.3",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The template function 'add' works for integers as well, returning the sum, which is 5."
+      },
+      {
+        "id": 21,
+        "category": "Basic",
+        "question": "Which operator cannot be overloaded in C++?",
+        "options": [
+          "::",
+          "+",
+          "[]",
+          "*"
+        ],
+        "correct_answer": 0,
+        "explanation": "The scope resolution operator '::' cannot be overloaded in C++."
+      },
+      {
+        "id": 22,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int arr[5] = {1, 2, 3, 4, 5};\n    cout << *(arr + 3) << endl;\n    return 0;\n}",
+        "options": [
+          "4",
+          "3",
+          "5",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "'*(arr + 3)' points to the fourth element, which is 4."
+      },
+      {
+        "id": 23,
+        "category": "Basic",
+        "question": "Which STL container automatically maintains sorted order?",
+        "options": [
+          "set",
+          "vector",
+          "queue",
+          "stack"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'set' container automatically maintains elements in sorted order."
+      },
+      {
+        "id": 24,
+        "category": "Advanced",
+        "question": "What is the output of this code?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int x = 3, y = 5;\n    cout << (x & y) << endl;\n    return 0;\n}",
+        "options": [
+          "1",
+          "3",
+          "5",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The bitwise AND of 3 (011) and 5 (101) is 001, which is 1."
+      },
+      {
+        "id": 25,
+        "category": "Basic",
+        "question": "Which of the following correctly declares a 2D array in C++?",
+        "options": [
+          "int arr[3][3];",
+          "int arr[][];",
+          "int arr[3,3];",
+          "int arr{3,3};"
+        ],
+        "correct_answer": 0,
+        "explanation": "The correct syntax for declaring a 2D array is 'int arr[3][3];'."
+      },
+      {
+        "id": 26,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int x = 5;\n    int *p = &x;\n    *p = 10;\n    cout << x << endl;\n    return 0;\n}",
+        "options": [
+          "10",
+          "5",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The pointer 'p' modifies the value of 'x' through dereferencing. Hence, the output is '10'."
+      },
+      {
+        "id": 27,
+        "category": "Basic",
+        "question": "Which of the following statements is true about constructors in C++?",
+        "options": [
+          "They do not have a return type.",
+          "They can be virtual.",
+          "They must be explicitly called.",
+          "They are optional in a class."
+        ],
+        "correct_answer": 0,
+        "explanation": "Constructors do not have a return type and are automatically called when an object is created."
+      },
+      {
+        "id": 28,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\n#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    virtual void show() {\n        cout << \"A\";\n    }\n};\nclass B : public A {\npublic:\n    void show() {\n        cout << \"B\";\n    }\n};\nint main() {\n    A obj;\n    B *bptr = (B*)&obj;\n    bptr->show();\n    return 0;\n}",
+        "options": [
+          "A",
+          "Undefined behavior",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 1,
+        "explanation": "Casting a base class object to a derived class pointer leads to undefined behavior when accessing overridden methods."
+      },
+      {
+        "id": 29,
+        "category": "Basic",
+        "question": "Which operator is used to allocate memory dynamically in C++?",
+        "options": [
+          "new",
+          "malloc",
+          "alloc",
+          "calloc"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'new' operator is used for dynamic memory allocation in C++."
+      },
+      {
+        "id": 30,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\n#include <iostream>\nusing namespace std;\ntemplate <typename T>\nvoid swapValues(T &a, T &b) {\n    T temp = a;\n    a = b;\n    b = temp;\n}\nint main() {\n    int x = 5, y = 10;\n    swapValues(x, y);\n    cout << x << \" \" << y << endl;\n    return 0;\n}",
+        "options": [
+          "10 5",
+          "5 10",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The template function swaps the values of 'x' and 'y', resulting in '10 5'."
+      },
+      {
+        "id": 31,
+        "category": "Basic",
+        "question": "Which keyword is used to prevent inheritance of a class?",
+        "options": [
+          "final",
+          "sealed",
+          "restrict",
+          "inheritance"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'final' keyword is used to prevent inheritance of a class in C++."
+      },
+      {
+        "id": 32,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n    Base() { cout << \"Base\"; }\n    virtual ~Base() { cout << \"~Base\"; }\n};\nclass Derived : public Base {\npublic:\n    Derived() { cout << \"Derived\"; }\n    ~Derived() { cout << \"~Derived\"; }\n};\nint main() {\n    Base *b = new Derived();\n    delete b;\n    return 0;\n}",
+        "options": [
+          "BaseDerived~Derived~Base",
+          "BaseDerived~Base",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The destructor is virtual, so the derived destructor is called first, ensuring proper cleanup."
+      },
+      {
+        "id": 33,
+        "category": "Basic",
+        "question": "Which loop is guaranteed to execute at least once?",
+        "options": [
+          "do-while",
+          "for",
+          "while",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'do-while' loop checks its condition after executing the body, ensuring at least one execution."
+      },
+      {
+        "id": 34,
+        "category": "Advanced",
+        "question": "What is the output of this code?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int a = 5, b = 10;\n    int c = a-- + ++b;\n    cout << c << endl;\n    return 0;\n}",
+        "options": [
+          "16",
+          "15",
+          "14",
+          "Error"
+        ],
+        "correct_answer": 1,
+        "explanation": "'a--' uses the value of 'a' (5) before decrementing, and '++b' increments 'b' to 11. The result is 5 + 11 = 16."
+      },
+      {
+        "id": 35,
+        "category": "Basic",
+        "question": "Which of the following is the correct way to declare a pointer in C++?",
+        "options": [
+          "int *ptr;",
+          "int ptr*;",
+          "pointer int ptr;",
+          "int &ptr;"
+        ],
+        "correct_answer": 0,
+        "explanation": "The correct syntax to declare a pointer in C++ is 'int *ptr;'."
+      },
+      {
+        "id": 36,
+        "category": "Advanced",
+        "question": "What will be the output of the following code?\n\n#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A\"; }\n    ~A() { cout << \"~A\"; }\n};\nvoid test() {\n    static A obj;\n}\nint main() {\n    test();\n    test();\n    return 0;\n}",
+        "options": [
+          "A~A",
+          "AA",
+          "A",
+          "Error"
+        ],
+        "correct_answer": 2,
+        "explanation": "The static object is initialized only once and not destroyed until the program ends. Hence, 'A' is printed once."
+      },
+      {
+        "id": 37,
+        "category": "Basic",
+        "question": "What does the keyword 'this' represent in a C++ class?",
+        "options": [
+          "The current object",
+          "The class itself",
+          "A pointer to the base class",
+          "None of the above"
+        ],
+        "correct_answer": 0,
+        "explanation": "'this' is a pointer to the current object in a class."
+      },
+      {
+        "id": 38,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int arr[] = {1, 2, 3, 4, 5};\n    cout << *(arr + 2) << endl;\n    return 0;\n}",
+        "options": [
+          "3",
+          "2",
+          "4",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "'*(arr + 2)' accesses the third element in the array, which is 3."
+      },
+      {
+        "id": 39,
+        "category": "Basic",
+        "question": "Which header file is required for input/output operations in C++?",
+        "options": [
+          "<iostream>",
+          "<stdio.h>",
+          "<cstdlib>",
+          "<cstring>"
+        ],
+        "correct_answer": 0,
+        "explanation": "'<iostream>' is the standard header file for input/output in C++."
+      },
+      {
+        "id": 40,
+        "category": "Advanced",
+        "question": "What will be the output of this code?\n\n#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\nint main() {\n    Base *b = new Derived();\n    b->show();\n    delete b;\n    return 0;\n}",
+        "options": [
+          "Derived",
+          "Base",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The virtual function ensures that the 'Derived' class's 'show' method is called."
+      },
+      {
+        "id": 41,
+        "category": "Basic",
+        "question": "What is the default access modifier for members of a C++ class?",
+        "options": [
+          "Private",
+          "Public",
+          "Protected",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "In C++, members of a class are private by default."
+      },
+      {
+        "id": 42,
+        "category": "Advanced",
+        "question": "Which of the following types cannot be used as a key in an unordered_map?",
+        "options": [
+          "std::vector<int>",
+          "int",
+          "std::string",
+          "char"
+        ],
+        "correct_answer": 0,
+        "explanation": "std::vector<int> cannot be used because it doesn't provide a hash function required by unordered_map."
+      },
+      {
+        "id": 43,
+        "category": "Basic",
+        "question": "Which of the following is the correct syntax for defining a reference in C++?",
+        "options": [
+          "int &ref = x;",
+          "int ref = &x;",
+          "int ref = x;",
+          "int &ref x;"
+        ],
+        "correct_answer": 0,
+        "explanation": "References are declared as 'int &ref = x;'."
+      },
+      {
+        "id": 44,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    auto add = [](int a, int b) { return a + b; };\n    cout << add(2, 3) << endl;\n    return 0;\n}",
+        "options": [
+          "5",
+          "2",
+          "3",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "This code uses a lambda expression to add two numbers, outputting 5."
+      },
+      {
+        "id": 45,
+        "category": "Basic",
+        "question": "Which of the following is not a valid C++ data type?",
+        "options": [
+          "float",
+          "double",
+          "string",
+          "real"
+        ],
+        "correct_answer": 3,
+        "explanation": "'real' is not a valid data type in C++."
+      },
+      {
+        "id": 46,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\n#include <iostream>\n#include <vector>\nusing namespace std;\nint main() {\n    vector<int> v = {1, 2, 3};\n    v.emplace_back(4);\n    cout << v.size() << endl;\n    return 0;\n}",
+        "options": [
+          "4",
+          "3",
+          "5",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "emplace_back adds a new element, increasing the vector size to 4."
+      },
+      {
+        "id": 47,
+        "category": "Basic",
+        "question": "Which keyword is used to declare a constant pointer?",
+        "options": [
+          "const",
+          "pointer",
+          "restrict",
+          "static"
+        ],
+        "correct_answer": 0,
+        "explanation": "'const' is used to declare a constant pointer in C++."
+      },
+      {
+        "id": 48,
+        "category": "Advanced",
+        "question": "What is the purpose of the 'friend' keyword in C++?",
+        "options": [
+          "To grant access to private/protected members of a class",
+          "To create a derived class",
+          "To overload operators",
+          "To prevent inheritance"
+        ],
+        "correct_answer": 0,
+        "explanation": "'friend' allows non-member functions or other classes to access private/protected members of a class."
+      },
+      {
+        "id": 49,
+        "category": "Basic",
+        "question": "Which STL container is best suited for a first-in, first-out (FIFO) operation?",
+        "options": [
+          "queue",
+          "stack",
+          "vector",
+          "set"
+        ],
+        "correct_answer": 0,
+        "explanation": "'queue' follows the FIFO principle."
+      },
+      {
+        "id": 50,
+        "category": "Advanced",
+        "question": "What is the output of this code?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int x = 10;\n    cout << (x > 5 ? \"Yes\" : \"No\") << endl;\n    return 0;\n}",
+        "options": [
+          "Yes",
+          "No",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The conditional operator checks if 'x > 5', which is true, so 'Yes' is printed."
+      },
+      {
+        "id": 51,
+        "category": "Basic",
+        "question": "Which operator is used to access a member of a class through a pointer?",
+        "options": [
+          "->",
+          ".",
+          "::",
+          "&"
+        ],
+        "correct_answer": 0,
+        "explanation": "The '->' operator is used to access class members through a pointer."
+      },
+      {
+        "id": 52,
+        "category": "Advanced",
+        "question": "What is the output of this code?\n\n#include <iostream>\nusing namespace std;\nvoid func(int x) {\n    static int y = 0;\n    y += x;\n    cout << y << endl;\n}\nint main() {\n    func(5);\n    func(10);\n    func(15);\n    return 0;\n}",
+        "options": [
+          "5, 15, 30",
+          "5, 10, 15",
+          "5, 15, 20",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The static variable 'y' retains its value across function calls, resulting in cumulative outputs."
+      },
+      {
+        "id": 53,
+        "category": "Basic",
+        "question": "Which of the following correctly declares a function in C++?",
+        "options": [
+          "int func();",
+          "func int();",
+          "int func{};",
+          "None of the above"
+        ],
+        "correct_answer": 0,
+        "explanation": "The correct syntax to declare a function is 'int func();'."
+      },
+      {
+        "id": 54,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A\"; }\n    ~A() { cout << \"~A\"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"B\"; }\n    ~B() { cout << \"~B\"; }\n};\nint main() {\n    A *obj = new B();\n    delete obj;\n    return 0;\n}",
+        "options": [
+          "AB~B~A",
+          "AB~A",
+          "A~B~A",
+          "Error"
+        ],
+        "correct_answer": 1,
+        "explanation": "Without a virtual destructor in the base class, only the base destructor is called."
+      },
+      {
+        "id": 55,
+        "category": "Basic",
+        "question": "Which of the following is a valid identifier in C++?",
+        "options": [
+          "my_var",
+          "123var",
+          "var@name",
+          "None of the above"
+        ],
+        "correct_answer": 0,
+        "explanation": "Identifiers must begin with a letter or underscore and cannot contain special characters."
+      },
+      {
+        "id": 56,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\n#include <iostream>\n#include <vector>\nusing namespace std;\nint main() {\n    vector<int> v{1, 2, 3, 4};\n    for (auto it = v.begin(); it != v.end(); ++it) {\n        if (*it == 2) {\n            v.erase(it);\n            break;\n        }\n    }\n    for (int i : v) cout << i << \" \";\n    return 0;\n}",
+        "options": [
+          "1 3 4",
+          "1 2 3 4",
+          "1 4",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "Erasing an element invalidates the iterator, but breaking immediately avoids undefined behavior."
+      },
+      {
+        "id": 57,
+        "category": "Basic",
+        "question": "Which of the following is not a type of inheritance in C++?",
+        "options": [
+          "Public",
+          "Private",
+          "Multiple",
+          "Linear"
+        ],
+        "correct_answer": 3,
+        "explanation": "C++ does not support 'linear' inheritance as a specific type."
+      },
+      {
+        "id": 58,
+        "category": "Advanced",
+        "question": "What is the output of this code?\n\n#include <iostream>\nusing namespace std;\ntemplate <typename T>\nT square(T x) {\n    return x * x;\n}\nint main() {\n    cout << square(5.5) << endl;\n    return 0;\n}",
+        "options": [
+          "30.25",
+          "25",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The template function 'square' works with floating-point types, outputting 30.25."
+      },
+      {
+        "id": 59,
+        "category": "Basic",
+        "question": "Which operator is overloaded to compare two strings in the C++ Standard Library?",
+        "options": [
+          "==",
+          "!=",
+          "<>",
+          "None of the above"
+        ],
+        "correct_answer": 0,
+        "explanation": "The '==' operator is overloaded for std::string to compare equality."
+      },
+      {
+        "id": 60,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\nclass Test {\npublic:\n    Test() { cout << \"Constructor\"; }\n    ~Test() { cout << \"Destructor\"; }\n};\nvoid func() {\n    Test obj;\n}\nint main() {\n    func();\n    cout << \"Main\";\n    return 0;\n}",
+        "options": [
+          "ConstructorDestructorMain",
+          "ConstructorMainDestructor",
+          "ConstructorMain",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The destructor is called automatically when 'obj' goes out of scope in 'func'."
+      },
+      {
+        "id": 61,
+        "category": "Basic",
+        "question": "Which loop is most suitable for iterating over a collection in C++?",
+        "options": [
+          "Range-based for loop",
+          "while",
+          "do-while",
+          "goto"
+        ],
+        "correct_answer": 0,
+        "explanation": "The range-based for loop is ideal for collections like arrays or STL containers."
+      },
+      {
+        "id": 62,
+        "category": "Advanced",
+        "question": "What does the following code do?\n\n#include <iostream>\n#include <memory>\nusing namespace std;\nint main() {\n    unique_ptr<int> p = make_unique<int>(10);\n    cout << *p;\n    return 0;\n}",
+        "options": [
+          "Prints 10",
+          "Prints a garbage value",
+          "Throws an error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The unique_ptr is initialized with 10, and dereferencing it outputs 10."
+      },
+      {
+        "id": 63,
+        "category": "Basic",
+        "question": "What is the purpose of the 'break' statement in a loop?",
+        "options": [
+          "To exit the loop",
+          "To skip an iteration",
+          "To reset the loop",
+          "None of the above"
+        ],
+        "correct_answer": 0,
+        "explanation": "'break' exits the loop entirely."
+      },
+      {
+        "id": 64,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int arr[] = {1, 2, 3};\n    for (auto x : arr) {\n        x *= 2;\n    }\n    for (int i : arr) cout << i << \" \";\n    return 0;\n}",
+        "options": [
+          "1 2 3",
+          "2 4 6",
+          "0 0 0",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The range-based for loop modifies a copy of each element, leaving the original array unchanged."
+      },
+      {
+        "id": 65,
+        "category": "Basic",
+        "question": "Which of the following is not a valid preprocessor directive?",
+        "options": [
+          "#define",
+          "#include",
+          "#pragma",
+          "#import"
+        ],
+        "correct_answer": 3,
+        "explanation": "'#import' is not a standard preprocessor directive in C++."
+      },
+      {
+        "id": 66,
+        "category": "Advanced",
+        "question": "What is the output of this code?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int a = 5, b = 10;\n    swap(a, b);\n    cout << a << \" \" << b << endl;\n    return 0;\n}",
+        "options": [
+          "10 5",
+          "5 10",
+          "Error",
+          "Undefined"
+        ],
+        "correct_answer": 0,
+        "explanation": "The STL 'swap' function exchanges the values of 'a' and 'b'."
+      },
+      {
+        "id": 67,
+        "category": "Basic",
+        "question": "What does the keyword 'this' represent in a C++ class?",
+        "options": [
+          "A pointer to the current object",
+          "The name of the class",
+          "The superclass of the current object",
+          "None of the above"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'this' pointer refers to the current object instance of the class."
+      },
+      {
+        "id": 68,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int a = 5, b = 0;\n    try {\n        if (b == 0) throw \"Division by zero!\";\n        cout << a / b;\n    } catch (const char* msg) {\n        cout << msg;\n    }\n    return 0;\n}",
+        "options": [
+          "0",
+          "Division by zero!",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 1,
+        "explanation": "The code throws and catches an exception for division by zero, outputting the error message."
+      },
+      {
+        "id": 69,
+        "category": "Basic",
+        "question": "What is the size of a pointer in a 64-bit architecture?",
+        "options": [
+          "4 bytes",
+          "8 bytes",
+          "16 bytes",
+          "Depends on the data type"
+        ],
+        "correct_answer": 1,
+        "explanation": "In a 64-bit architecture, a pointer is typically 8 bytes."
+      },
+      {
+        "id": 70,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\ntemplate <typename T>\nclass Test {\n    T x;\npublic:\n    Test(T val) : x(val) {}\n    void print() { cout << x; }\n};\nint main() {\n    Test<int> obj(42);\n    obj.print();\n    return 0;\n}",
+        "options": [
+          "42",
+          "Error",
+          "Undefined behavior",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The code defines a templated class and correctly prints the value passed to the constructor."
+      },
+      {
+        "id": 71,
+        "category": "Basic",
+        "question": "What is the default access specifier for members of a C++ class?",
+        "options": [
+          "private",
+          "public",
+          "protected",
+          "Depends on the compiler"
+        ],
+        "correct_answer": 0,
+        "explanation": "By default, class members in C++ are private unless specified otherwise."
+      },
+      {
+        "id": 72,
+        "category": "Advanced",
+        "question": "What is the output of this code?\n\n#include <iostream>\n#include <string>\nusing namespace std;\nint main() {\n    string s = \"Hello\";\n    s[1] = 'a';\n    cout << s;\n    return 0;\n}",
+        "options": [
+          "Hallo",
+          "Hello",
+          "Error",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "String elements can be modified directly using their index."
+      },
+      {
+        "id": 73,
+        "category": "Basic",
+        "question": "Which header file is required to use the 'std::vector' container?",
+        "options": [
+          "<vector>",
+          "<list>",
+          "<algorithm>",
+          "<array>"
+        ],
+        "correct_answer": 0,
+        "explanation": "The <vector> header file provides the 'std::vector' container."
+      },
+      {
+        "id": 74,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\nint main() {\n    Base* b = new Derived();\n    b->show();\n    delete b;\n    return 0;\n}",
+        "options": [
+          "Base",
+          "Derived",
+          "Error",
+          "Undefined behavior"
+        ],
+        "correct_answer": 1,
+        "explanation": "Polymorphism ensures that the 'show' method of the derived class is called when using a base pointer."
+      },
+      {
+        "id": 75,
+        "category": "Basic",
+        "question": "What is the purpose of the 'const' keyword in C++?",
+        "options": [
+          "To declare a constant variable",
+          "To prevent modification of a variable or function argument",
+          "Both A and B",
+          "None of the above"
+        ],
+        "correct_answer": 2,
+        "explanation": "'const' is used to define immutable variables and to prevent modification of function arguments or methods."
+      },
+      {
+        "id": 76,
+        "category": "Advanced",
+        "question": "What is the output of this code?\n\n#include <iostream>\n#include <set>\nusing namespace std;\nint main() {\n    set<int> s = {1, 2, 3, 4};\n    auto it = s.find(3);\n    s.erase(it);\n    for (int i : s) cout << i << \" \";\n    return 0;\n}",
+        "options": [
+          "1 2 4",
+          "1 2 3",
+          "Error",
+          "Undefined behavior"
+        ],
+        "correct_answer": 0,
+        "explanation": "The element '3' is erased from the set, leaving '1 2 4'."
+      },
+      {
+        "id": 77,
+        "category": "Basic",
+        "question": "Which operator is used to allocate memory dynamically in C++?",
+        "options": [
+          "new",
+          "malloc",
+          "allocate",
+          "None of the above"
+        ],
+        "correct_answer": 0,
+        "explanation": "The 'new' operator allocates memory dynamically in C++."
+      },
+      {
+        "id": 78,
+        "category": "Advanced",
+        "question": "What does the following code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int x = 5;\n    int* p = &x;\n    *p += 10;\n    cout << x;\n    return 0;\n}",
+        "options": [
+          "15",
+          "10",
+          "Error",
+          "Undefined"
+        ],
+        "correct_answer": 0,
+        "explanation": "The pointer 'p' modifies the value of 'x', resulting in 15."
+      },
+      {
+        "id": 79,
+        "category": "Basic",
+        "question": "Which of the following is a valid way to declare a 2D array in C++?",
+        "options": [
+          "int arr[3][3];",
+          "int arr[][];",
+          "int arr[3,3];",
+          "int arr[3,3]{};"
+        ],
+        "correct_answer": 0,
+        "explanation": "A 2D array in C++ is declared as 'int arr[3][3];'."
+      },
+      {
+        "id": 80,
+        "category": "Advanced",
+        "question": "What is the output of this code?\n\n#include <iostream>\nusing namespace std;\nclass Test {\n    int& ref;\npublic:\n    Test(int& x) : ref(x) {}\n    void setValue(int val) { ref = val; }\n};\nint main() {\n    int a = 10;\n    Test t(a);\n    t.setValue(20);\n    cout << a;\n    return 0;\n}",
+        "options": [
+          "20",
+          "10",
+          "Error",
+          "Undefined behavior"
+        ],
+        "correct_answer": 0,
+        "explanation": "The class member 'ref' is a reference to 'a', so modifying 'ref' affects 'a'."
+      },
+      {
+        "id": 81,
+        "category": "Basic",
+        "question": "What is the default value of a global integer variable in C++?",
+        "options": [
+          "Undefined",
+          "0",
+          "Depends on the compiler",
+          "Random garbage value"
+        ],
+        "correct_answer": 1,
+        "explanation": "Global variables in C++ are automatically initialized to 0 if not explicitly initialized."
+      },
+      {
+        "id": 82,
+        "category": "Advanced",
+        "question": "What is the output of this code?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int arr[] = {10, 20, 30};\n    int* ptr = arr;\n    ptr++;\n    cout << *ptr;\n    return 0;\n}",
+        "options": [
+          "10",
+          "20",
+          "30",
+          "Error"
+        ],
+        "correct_answer": 1,
+        "explanation": "Incrementing the pointer moves it to the second element of the array, which is 20."
+      },
+      {
+        "id": 83,
+        "category": "Basic",
+        "question": "What is the output of this code?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    cout << sizeof(int);\n    return 0;\n}",
+        "options": [
+          "2",
+          "4",
+          "Depends on the system",
+          "None of the above"
+        ],
+        "correct_answer": 2,
+        "explanation": "The size of an int depends on the system and compiler, typically 4 bytes in modern systems."
+      },
+      {
+        "id": 84,
+        "category": "Advanced",
+        "question": "What does the following code do?\n\n#include <iostream>\nusing namespace std;\nvoid func(int&& a) {\n    cout << a;\n}\nint main() {\n    func(10);\n    return 0;\n}",
+        "options": [
+          "Prints 10",
+          "Error",
+          "Undefined behavior",
+          "Compiles but produces no output"
+        ],
+        "correct_answer": 0,
+        "explanation": "The code uses an rvalue reference parameter and correctly passes the literal 10."
+      },
+      {
+        "id": 85,
+        "category": "Basic",
+        "question": "Which of the following is a valid way to declare a pointer to a function?",
+        "options": [
+          "int (*ptr)();",
+          "int ptr*();",
+          "int *(ptr());",
+          "int& ptr();"
+        ],
+        "correct_answer": 0,
+        "explanation": "The correct syntax for declaring a function pointer is 'int (*ptr)();'."
+      },
+      {
+        "id": 86,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\n#include <iostream>\n#include <vector>\nusing namespace std;\nint main() {\n    vector<int> vec = {1, 2, 3, 4};\n    vec.erase(vec.begin() + 1);\n    for (int v : vec) cout << v << \" \";\n    return 0;\n}",
+        "options": [
+          "1 3 4",
+          "1 2 4",
+          "1 2 3 4",
+          "Error"
+        ],
+        "correct_answer": 0,
+        "explanation": "The element at index 1 is removed, leaving '1 3 4' in the vector."
+      },
+      {
+        "id": 87,
+        "category": "Basic",
+        "question": "What is the output of this code?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int x = 5;\n    int* p = &x;\n    cout << p;\n    return 0;\n}",
+        "options": [
+          "5",
+          "Address of x",
+          "Error",
+          "Undefined behavior"
+        ],
+        "correct_answer": 1,
+        "explanation": "The pointer 'p' stores the address of 'x', which is printed."
+      },
+      {
+        "id": 88,
+        "category": "Advanced",
+        "question": "What will the following code output?\n\n#include <iostream>\nusing namespace std;\nvoid swap(int& a, int& b) {\n    a = a + b;\n    b = a - b;\n    a = a - b;\n}\nint main() {\n    int x = 10, y = 20;\n    swap(x, y);\n    cout << x << \" \" << y;\n    return 0;\n}",
+        "options": [
+          "20 10",
+          "10 20",
+          "Error",
+          "Undefined behavior"
+        ],
+        "correct_answer": 0,
+        "explanation": "The function swaps the values of 'x' and 'y' using arithmetic operations."
+      },
+      {
+        "id": 89,
+        "category": "Basic",
+        "question": "What is the output of this code?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int x = 10;\n    int y = 5;\n    cout << (x > y ? x : y);\n    return 0;\n}",
+        "options": [
+          "10",
+          "5",
+          "Error",
+          "Undefined behavior"
+        ],
+        "correct_answer": 0,
+        "explanation": "The ternary operator returns the larger value, which is 10."
+      },
+      {
+        "id": 90,
+        "category": "Advanced",
+        "question": "What does this code output?\n\n#include <iostream>\nusing namespace std;\nclass Test {\n    int x;\npublic:\n    Test() : x(5) {}\n    void print() const { cout << x; }\n};\nint main() {\n    Test t;\n    t.print();\n    return 0;\n}",
+        "options": [
+          "5",
+          "Error",
+          "Undefined behavior",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The code initializes 'x' to 5 in the constructor and prints it using a const member function."
+      },
+      {
+        "id": 91,
+        "category": "Basic",
+        "question": "Which of the following is not a valid C++ access specifier?",
+        "options": [
+          "protected",
+          "private",
+          "internal",
+          "public"
+        ],
+        "correct_answer": 2,
+        "explanation": "'internal' is not a valid access specifier in C++."
+      },
+      {
+        "id": 92,
+        "category": "Advanced",
+        "question": "What is the output of this code?\n\n#include <iostream>\n#include <queue>\nusing namespace std;\nint main() {\n    queue<int> q;\n    q.push(1);\n    q.push(2);\n    q.pop();\n    cout << q.front();\n    return 0;\n}",
+        "options": [
+          "1",
+          "2",
+          "Error",
+          "Undefined behavior"
+        ],
+        "correct_answer": 1,
+        "explanation": "The 'pop' function removes the front element, leaving '2' at the front of the queue."
+      },
+      {
+        "id": 93,
+        "category": "Basic",
+        "question": "What is the output of this code?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int arr[] = {1, 2, 3, 4};\n    cout << *(arr + 2);\n    return 0;\n}",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correct_answer": 2,
+        "explanation": "The expression '*(arr + 2)' accesses the third element of the array, which is 3."
+      },
+      {
+        "id": 94,
+        "category": "Advanced",
+        "question": "What does this code output?\n\n#include <iostream>\nusing namespace std;\nvoid increment(int* ptr) {\n    (*ptr)++;\n}\nint main() {\n    int x = 5;\n    increment(&x);\n    cout << x;\n    return 0;\n}",
+        "options": [
+          "5",
+          "6",
+          "Error",
+          "Undefined behavior"
+        ],
+        "correct_answer": 1,
+        "explanation": "The function increments the value of 'x' by dereferencing the pointer."
+      },
+      {
+        "id": 95,
+        "category": "Advanced",
+        "question": "What is the output of the following code?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    const int x = 10;\n    int* ptr = &x;\n    cout << *ptr;\n    return 0;\n}",
+        "options": [
+          "10",
+          "Error",
+          "Undefined behavior",
+          "None"
+        ],
+        "correct_answer": 1,
+        "explanation": "You cannot assign a non-const pointer to a const variable. The code will cause an error."
+      },
+      {
+        "id": 96,
+        "category": "Basic",
+        "question": "What is the correct way to declare a reference variable in C++?",
+        "options": [
+          "int& ref;",
+          "ref& int;",
+          "int ref&;",
+          "int ref;"
+        ],
+        "correct_answer": 0,
+        "explanation": "The correct syntax for declaring a reference variable is 'int& ref;'."
+      },
+      {
+        "id": 97,
+        "category": "Advanced",
+        "question": "What does this code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    int a = 5;\n    int* ptr = nullptr;\n    ptr = &a;\n    cout << *ptr;\n    return 0;\n}",
+        "options": [
+          "5",
+          "Error",
+          "nullptr",
+          "Undefined behavior"
+        ],
+        "correct_answer": 0,
+        "explanation": "The pointer 'ptr' is assigned the address of 'a', so it correctly outputs 5."
+      },
+      {
+        "id": 98,
+        "category": "Basic",
+        "question": "What will the following code output?\n\n#include <iostream>\nusing namespace std;\nint main() {\n    char str[] = \"Hello\";\n    cout << str[2];\n    return 0;\n}",
+        "options": [
+          "H",
+          "e",
+          "l",
+          "Error"
+        ],
+        "correct_answer": 2,
+        "explanation": "In the string 'Hello', 'str[2]' refers to the character 'l'."
+      },
+      {
+        "id": 99,
+        "category": "Advanced",
+        "question": "What is the output of this code?\n\n#include <iostream>\nusing namespace std;\nclass Test {\n    int* ptr;\npublic:\n    Test(int val) { ptr = new int(val); }\n    ~Test() { delete ptr; }\n};\nint main() {\n    Test t(5);\n    return 0;\n}",
+        "options": [
+          "5",
+          "Error",
+          "Memory leak",
+          "None"
+        ],
+        "correct_answer": 0,
+        "explanation": "The constructor dynamically allocates memory and the destructor frees it, so no memory leak occurs."
+      },
+      {
+        "id": 100,
+        "category": "Basic",
+        "question": "Which of the following is the correct syntax for a C++ switch statement?",
+        "options": [
+          "switch (expression) { case 1: break; }",
+          "switch { expression case 1: break; }",
+          "switch (expression) case 1: break;",
+          "switch expression case 1: break;"
+        ],
+        "correct_answer": 0,
+        "explanation": "The correct syntax for a switch statement in C++ is 'switch (expression) { case 1: break; }'."
+      }
+    ]
+  }
+  
