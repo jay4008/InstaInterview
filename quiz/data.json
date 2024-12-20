@@ -23,6 +23,12 @@
             "language": "c++",
             "path": "/c++/c++.json",
             "banner": "/assets/c++Banner.png"
+        },
+        {
+            "id": 5,
+            "language": "swift",
+            "path": "/swift/swift.json",
+            "banner": "/assets/swiftBanner.png"
         }
         
     ]

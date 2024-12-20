@@ -1,0 +1,1304 @@
+{
+    "quiz": [
+        {
+            "id": 1,
+            "category": "Basic",
+            "question": "What is the correct way to declare a constant in Swift?",
+            "options": [
+                "let x = 10",
+                "var x = 10",
+                "const x = 10",
+                "constant x = 10"
+            ],
+            "correct_answer": 0,
+            "explanation": "Constants in Swift are declared using the 'let' keyword."
+        },
+        {
+            "id": 2,
+            "category": "Basic",
+            "question": "Which of the following is the correct way to declare a variable in Swift?",
+            "options": [
+                "let x = 5",
+                "var x = 5",
+                "x := 5",
+                "int x = 5"
+            ],
+            "correct_answer": 1,
+            "explanation": "Variables in Swift are declared using the 'var' keyword."
+        },
+        {
+            "id": 3,
+            "category": "Basic",
+            "question": "What does the following code print?\n\nlet x = 10\nprint(x)",
+            "options": [
+                "10",
+                "Error: 'x' is not mutable",
+                "Nothing",
+                "None of the above"
+            ],
+            "correct_answer": 0,
+            "explanation": "The code declares a constant 'x' with a value of 10 and prints it."
+        },
+        {
+            "id": 4,
+            "category": "Advanced",
+            "question": "What is the result of the following code?\n\nlet numbers = [1, 2, 3, 4, 5]\nlet result = numbers.filter { $0 % 2 == 0 }\nprint(result)",
+            "options": [
+                "[2, 4]",
+                "[1, 3, 5]",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'filter' method returns an array containing only the even numbers from the original array."
+        },
+        {
+            "id": 5,
+            "category": "Basic",
+            "question": "How do you define a function in Swift?",
+            "options": [
+                "func greet() { print(\"Hello\") }",
+                "def greet() { print(\"Hello\") }",
+                "function greet() { print(\"Hello\") }",
+                "fun greet() { print(\"Hello\") }"
+            ],
+            "correct_answer": 0,
+            "explanation": "Functions in Swift are defined using the 'func' keyword."
+        },
+        {
+            "id": 6,
+            "category": "Advanced",
+            "question": "What does the following code output?\n\nlet names = [\"John\", \"Alice\", \"Bob\"]\nlet sortedNames = names.sorted(by: >)\nprint(sortedNames)",
+            "options": [
+                "[\"Bob\", \"John\", \"Alice\"]",
+                "[\"John\", \"Alice\", \"Bob\"]",
+                "[\"John\", \"Bob\", \"Alice\"]",
+                "[\"Alice\", \"Bob\", \"John\"]"
+            ],
+            "correct_answer": 2,
+            "explanation": "The 'sorted(by: >)' sorts the array in descending order."
+        },
+        {
+            "id": 7,
+            "category": "Basic",
+            "question": "What is the correct way to create an optional in Swift?",
+            "options": [
+                "var name: String?",
+                "var name = Optional<String>",
+                "let name: Optional",
+                "var name = ?String"
+            ],
+            "correct_answer": 0,
+            "explanation": "Optionals in Swift are declared by adding a '?' after the type."
+        },
+        {
+            "id": 8,
+            "category": "Advanced",
+            "question": "What does the following code print?\n\nlet number: Int? = nil\nlet result = number ?? 10\nprint(result)",
+            "options": [
+                "10",
+                "nil",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The nil-coalescing operator '??' returns the default value (10) when the optional is nil."
+        },
+        {
+            "id": 9,
+            "category": "Basic",
+            "question": "Which of the following is used to iterate through an array in Swift?",
+            "options": [
+                "for element in array { }",
+                "foreach element in array { }",
+                "while element in array { }",
+                "loop element in array { }"
+            ],
+            "correct_answer": 0,
+            "explanation": "The correct syntax for iterating through an array is 'for element in array { }'."
+        },
+        {
+            "id": 10,
+            "category": "Advanced",
+            "question": "What is the output of the following code?\n\nstruct Point {\n    var x: Int\n    var y: Int\n}\nvar p1 = Point(x: 1, y: 2)\nvar p2 = p1\np2.x = 5\nprint(p1.x)",
+            "options": [
+                "1",
+                "5",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "Structures in Swift are value types, so 'p2' is a copy of 'p1'. Modifying 'p2' does not affect 'p1'."
+        },
+        {
+            "id": 11,
+            "category": "Basic",
+            "question": "How do you declare a tuple in Swift?",
+            "options": [
+                "let person = (\"John\", 25)",
+                "let person = [\"John\", 25]",
+                "let person = {\"name\": \"John\", \"age\": 25}",
+                "let person = <\"John\", 25>"
+            ],
+            "correct_answer": 0,
+            "explanation": "Tuples in Swift are declared using parentheses with values separated by commas."
+        },
+        {
+            "id": 12,
+            "category": "Advanced",
+            "question": "What is the output of the following code?\n\nlet numbers = [1, 2, 3, 4]\nlet result = numbers.reduce(0, +)\nprint(result)",
+            "options": [
+                "10",
+                "1234",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'reduce' method combines all elements of the array using the '+' operator, resulting in the sum (10)."
+        },
+        {
+            "id": 13,
+            "category": "Basic",
+            "question": "What is the output of the following code?\n\nlet name: String? = nil\nif let unwrappedName = name {\n    print(unwrappedName)\n} else {\n    print(\"No name\")\n}",
+            "options": [
+                "\"No name\"",
+                "\"nil\"",
+                "\"None\"",
+                "Error"
+            ],
+            "correct_answer": 0,
+            "explanation": "The optional 'name' is nil, so the else branch is executed, printing \"No name\"."
+        },
+        {
+            "id": 14,
+            "category": "Advanced",
+            "question": "What does this code output?\n\nclass A {\n    func display() {\n        print(\"Class A\")\n    }\n}\nclass B: A {\n    override func display() {\n        print(\"Class B\")\n    }\n}\nlet obj: A = B()\nobj.display()",
+            "options": [
+                "\"Class B\"",
+                "\"Class A\"",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "Swift supports polymorphism, so the overridden method in class B is called."
+        },
+        {
+            "id": 15,
+            "category": "Basic",
+            "question": "What keyword is used to make a property or method accessible outside its defining module?",
+            "options": [
+                "public",
+                "open",
+                "external",
+                "private"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'public' keyword allows access to a property or method outside its module."
+        },
+        {
+            "id": 16,
+            "category": "Advanced",
+            "question": "What is the output of the following code?\n\nvar numbers = [1, 2, 3]\nnumbers.append(contentsOf: [4, 5])\nprint(numbers)",
+            "options": [
+                "[1, 2, 3, 4, 5]",
+                "[1, 2, 3]",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'append(contentsOf:)' method adds all elements of the provided array to 'numbers'."
+        },
+        {
+            "id": 17,
+            "category": "Basic",
+            "question": "What will the following code print?\n\nlet isSwiftGreat = true\nprint(!isSwiftGreat)",
+            "options": [
+                "false",
+                "true",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The '!' operator negates the Boolean value, so 'true' becomes 'false'."
+        },
+        {
+            "id": 18,
+            "category": "Advanced",
+            "question": "What is the output of this code?\n\nprotocol P {\n    func show()\n}\nclass C: P {\n    func show() {\n        print(\"Protocol P implemented\")\n    }\n}\nlet obj: P = C()\nobj.show()",
+            "options": [
+                "\"Protocol P implemented\"",
+                "Error",
+                "Undefined behavior",
+                "\"Protocol P\""
+            ],
+            "correct_answer": 0,
+            "explanation": "The class 'C' conforms to the protocol 'P' and implements its method, so the method is called successfully."
+        },
+        {
+            "id": 19,
+            "category": "Basic",
+            "question": "What is the result of the following code?\n\nvar x = 10\nx += 5\nprint(x)",
+            "options": [
+                "15",
+                "10",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The '+=' operator adds 5 to 'x', resulting in 15."
+        },
+        {
+            "id": 20,
+            "category": "Advanced",
+            "question": "What does this code do?\n\nclass A {\n    required init() {}\n}\nclass B: A {}\nlet obj = B()",
+            "options": [
+                "Compiles successfully",
+                "Error: 'required' initializer must be implemented",
+                "Error: 'required' cannot be used in superclass",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "A 'required' initializer ensures that subclasses must implement it, but they inherit it automatically if no customization is needed."
+        },
+        {
+            "id": 21,
+            "category": "Basic",
+            "question": "How do you check if an array is empty in Swift?",
+            "options": [
+                "array.isEmpty",
+                "array == []",
+                "array.count == 0",
+                "All of the above"
+            ],
+            "correct_answer": 3,
+            "explanation": "All the options are valid ways to check if an array is empty in Swift."
+        },
+        {
+            "id": 22,
+            "category": "Advanced",
+            "question": "What does this code do?\n\nlet set: Set = [1, 2, 3, 2]\nprint(set)",
+            "options": [
+                "[1, 2, 3]",
+                "[1, 2, 3, 2]",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "Sets in Swift store unique elements, so duplicates are ignored."
+        },
+        {
+            "id": 23,
+            "category": "Basic",
+            "question": "What is the output of this code?\n\nlet str = \"Swift\"\nprint(str.count)",
+            "options": [
+                "5",
+                "6",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'count' property of a String returns the number of characters in it."
+        },
+        {
+            "id": 24,
+            "category": "Advanced",
+            "question": "What does the following code output?\n\nlet dict = [\"a\": 1, \"b\": 2]\nprint(dict[\"c\"] ?? -1)",
+            "options": [
+                "-1",
+                "0",
+                "nil",
+                "Error"
+            ],
+            "correct_answer": 0,
+            "explanation": "The nil-coalescing operator '??' returns the default value (-1) when the key 'c' is not found."
+        },
+        {
+            "id": 25,
+            "category": "Basic",
+            "question": "What keyword is used to exit a loop early in Swift?",
+            "options": [
+                "break",
+                "exit",
+                "continue",
+                "stop"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'break' keyword is used to exit a loop early in Swift."
+        },
+        {
+            "id": 26,
+            "category": "Advanced",
+            "question": "What does the following code print?\n\nstruct S {\n    static var count = 0\n    init() { S.count += 1 }\n}\nlet s1 = S()\nlet s2 = S()\nprint(S.count)",
+            "options": [
+                "2",
+                "1",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "Static properties are shared across all instances, so 'count' is incremented for each new instance."
+        },
+        {
+            "id": 27,
+            "category": "Basic",
+            "question": "What is the result of the following code?\n\nlet result = [1, 2, 3].map { $0 * 2 }\nprint(result)",
+            "options": [
+                "[2, 4, 6]",
+                "[1, 2, 3]",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'map' function applies the closure to each element, doubling their values."
+        },
+        {
+            "id": 28,
+            "category": "Advanced",
+            "question": "What does this code output?\n\nclass C {\n    deinit {\n        print(\"Deinitialized\")\n    }\n}\nvar obj: C? = C()\nobj = nil",
+            "options": [
+                "\"Deinitialized\"",
+                "Error",
+                "No output",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'deinit' method is called when the object is deallocated."
+        },
+        {
+            "id": 29,
+            "category": "Basic",
+            "question": "How do you make a function throw an error in Swift?",
+            "options": [
+                "func myFunction() throws",
+                "func myFunction() throw",
+                "func myFunction() error",
+                "func myFunction() -> Error"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'throws' keyword indicates that a function can throw an error."
+        },
+        {
+            "id": 30,
+            "category": "Advanced",
+            "question": "What is the output of the following code?\n\nlet closure: () -> () = { print(\"Swift closure\") }\nclosure()",
+            "options": [
+                "\"Swift closure\"",
+                "Error",
+                "No output",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The closure is called, and it prints \"Swift closure\"."
+        },
+        {
+            "id": 31,
+            "category": "Basic",
+            "question": "What is the output of the following code?\n\nvar x = 5\nx *= 3\nprint(x)",
+            "options": [
+                "15",
+                "5",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The '*=' operator multiplies the variable 'x' by 3, resulting in 15."
+        },
+        {
+            "id": 32,
+            "category": "Advanced",
+            "question": "What is the result of the following code?\n\nlet array = [1, 2, 3, 4]\nlet output = array.compactMap { $0 % 2 == 0 ? $0 : nil }\nprint(output)",
+            "options": [
+                "[2, 4]",
+                "[1, 3]",
+                "[1, 2, 3, 4]",
+                "Error"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'compactMap' function filters and removes nil values, keeping only the even numbers."
+        },
+        {
+            "id": 33,
+            "category": "Basic",
+            "question": "What is the difference between 'var' and 'let' in Swift?",
+            "options": [
+                "'var' is mutable, while 'let' is immutable",
+                "'let' is mutable, while 'var' is immutable",
+                "Both are mutable",
+                "Both are immutable"
+            ],
+            "correct_answer": 0,
+            "explanation": "'var' is used for variables that can change, while 'let' is used for constants that cannot change."
+        },
+        {
+            "id": 34,
+            "category": "Advanced",
+            "question": "What will this code print?\n\nlet dict = [\"one\": 1, \"two\": 2, \"three\": 3]\nprint(dict.keys.sorted())",
+            "options": [
+                "[\"one\", \"three\", \"two\"]",
+                "[\"one\", \"two\", \"three\"]",
+                "[\"three\", \"two\", \"one\"]",
+                "Error"
+            ],
+            "correct_answer": 1,
+            "explanation": "The 'keys.sorted()' sorts the dictionary keys in ascending order."
+        },
+        {
+            "id": 35,
+            "category": "Basic",
+            "question": "Which of the following data types is NOT a standard Swift type?",
+            "options": [
+                "Integer",
+                "Float",
+                "Double",
+                "Char"
+            ],
+            "correct_answer": 3,
+            "explanation": "Swift does not have a 'Char' type; single characters are represented using the 'Character' type."
+        },
+        {
+            "id": 36,
+            "category": "Advanced",
+            "question": "What will the following code print?\n\nlet a = [1, 2, 3]\nlet b = a.dropFirst()\nprint(b)",
+            "options": [
+                "[2, 3]",
+                "[1, 2]",
+                "[1]",
+                "Error"
+            ],
+            "correct_answer": 0,
+            "explanation": "'dropFirst()' returns a sequence by removing the first element of the array."
+        },
+        {
+            "id": 37,
+            "category": "Basic",
+            "question": "What is the correct syntax for a switch statement in Swift?",
+            "options": [
+                "switch x { case 1: print(\"One\") default: print(\"Other\") }",
+                "switch x { case 1: print(\"One\") case _: print(\"Other\") }",
+                "switch x { if 1: print(\"One\") else: print(\"Other\") }",
+                "switch x { when 1: print(\"One\") else: print(\"Other\") }"
+            ],
+            "correct_answer": 0,
+            "explanation": "Swift's 'switch' uses 'case' for specific conditions and 'default' for the catch-all case."
+        },
+        {
+            "id": 38,
+            "category": "Advanced",
+            "question": "What does this code do?\n\nstruct S {\n    let value: Int\n    func doubleValue() -> Int {\n        return value * 2\n    }\n}\nvar s = S(value: 10)\nprint(s.doubleValue())",
+            "options": [
+                "20",
+                "Error",
+                "10",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The function 'doubleValue()' calculates and returns twice the value of 'value'."
+        },
+        {
+            "id": 39,
+            "category": "Basic",
+            "question": "Which collection type in Swift does NOT guarantee the order of its elements?",
+            "options": [
+                "Array",
+                "Set",
+                "Dictionary",
+                "Tuple"
+            ],
+            "correct_answer": 1,
+            "explanation": "Sets in Swift are unordered collections of unique elements."
+        },
+        {
+            "id": 40,
+            "category": "Advanced",
+            "question": "What does this code output?\n\nlet range = 1..<5\nprint(range.contains(5))",
+            "options": [
+                "false",
+                "true",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The range '1..<5' includes numbers 1 to 4 but excludes 5."
+        },
+        {
+            "id": 41,
+            "category": "Basic",
+            "question": "What is the default value of an uninitialized optional variable in Swift?",
+            "options": [
+                "nil",
+                "0",
+                "\"\"",
+                "Undefined"
+            ],
+            "correct_answer": 0,
+            "explanation": "Uninitialized optionals in Swift have a default value of 'nil'."
+        },
+        {
+            "id": 42,
+            "category": "Advanced",
+            "question": "What does this code do?\n\nstruct MyStruct {\n    lazy var value: Int = {\n        return 10 * 2\n    }()\n}\nvar s = MyStruct()\nprint(s.value)",
+            "options": [
+                "20",
+                "Error",
+                "0",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "Lazy properties are computed the first time they are accessed, so 'value' is set to 20 when accessed."
+        },
+        {
+            "id": 43,
+            "category": "Basic",
+            "question": "What is the result of the following code?\n\nlet numbers = [1, 2, 3]\nprint(numbers.first)",
+            "options": [
+                "Optional(1)",
+                "1",
+                "nil",
+                "Error"
+            ],
+            "correct_answer": 0,
+            "explanation": "'first' returns an optional containing the first element of the array."
+        },
+        {
+            "id": 44,
+            "category": "Advanced",
+            "question": "What is the output of the following code?\n\nlet value: Any = \"Swift\"\nif let str = value as? String {\n    print(str)\n} else {\n    print(\"Not a string\")\n}",
+            "options": [
+                "\"Swift\"",
+                "\"Not a string\"",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'as?' operator performs conditional casting, successfully casting 'value' to a String."
+        },
+        {
+            "id": 45,
+            "category": "Basic",
+            "question": "What is the purpose of the 'guard' statement in Swift?",
+            "options": [
+                "To exit early if a condition is not met",
+                "To repeat code until a condition is true",
+                "To create immutable variables",
+                "To handle exceptions"
+            ],
+            "correct_answer": 0,
+            "explanation": "'guard' is used to exit the current scope early if a condition fails."
+        },
+        {
+            "id": 46,
+            "category": "Advanced",
+            "question": "What does this code do?\n\nvar x: Int? = 10\nx = nil\nprint(x!)",
+            "options": [
+                "Error: Unexpectedly found nil while unwrapping an Optional",
+                "nil",
+                "0",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "Forcibly unwrapping a nil optional results in a runtime error."
+        },
+        {
+            "id": 47,
+            "category": "Basic",
+            "question": "Which keyword is used to handle errors in Swift?",
+            "options": [
+                "do-catch",
+                "try-catch",
+                "throw",
+                "catch-try"
+            ],
+            "correct_answer": 0,
+            "explanation": "Errors in Swift are handled using the 'do-catch' block."
+        },
+        {
+            "id": 48,
+            "category": "Advanced",
+            "question": "What is the result of the following code?\n\nlet array = [1, 2, 3]\nprint(array.prefix(2))",
+            "options": [
+                "[1, 2]",
+                "[1, 2, 3]",
+                "[1]",
+                "Error"
+            ],
+            "correct_answer": 0,
+            "explanation": "'prefix' returns the first n elements from the array."
+        },
+        {
+            "id": 49,
+            "category": "Basic",
+            "question": "What is the syntax to define a dictionary in Swift?",
+            "options": [
+                "let dict: [String: Int] = [\"key\": 1]",
+                "let dict = [\"key\" -> 1]",
+                "let dict: Dictionary(String, Int) = [\"key\": 1]",
+                "let dict: (String, Int) = [\"key\": 1]"
+            ],
+            "correct_answer": 0,
+            "explanation": "Dictionaries in Swift use the syntax '[KeyType: ValueType]' to define key-value pairs."
+        },
+        {
+            "id": 50,
+            "category": "Advanced",
+            "question": "What does this code output?\n\nlet optional: Int? = nil\nprint(optional ?? 100)",
+            "options": [
+                "100",
+                "nil",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The nil-coalescing operator ('??') returns the right-hand value (100) if the optional is nil."
+        },
+        {
+            "id": 51,
+            "category": "Basic",
+            "question": "What is the output of the following code?\n\nlet a = 3, b = 5\nlet c = a + b\nprint(c)",
+            "options": [
+                "8",
+                "35",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The '+' operator adds two numbers, resulting in 8."
+        },
+        {
+            "id": 52,
+            "category": "Advanced",
+            "question": "What does the following code do?\n\nlet numbers = [1, 2, 3, 4]\nlet result = numbers.reduce(0, +)\nprint(result)",
+            "options": [
+                "10",
+                "1234",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'reduce' function aggregates all elements of the array, summing them to 10."
+        },
+        {
+            "id": 53,
+            "category": "Basic",
+            "question": "Which keyword is used to define a protocol in Swift?",
+            "options": [
+                "protocol",
+                "interface",
+                "abstract",
+                "class"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'protocol' keyword is used to define a protocol in Swift."
+        },
+        {
+            "id": 54,
+            "category": "Advanced",
+            "question": "What is the result of the following code?\n\nlet array = [1, 2, 3]\nprint(array.firstIndex(of: 2) ?? -1)",
+            "options": [
+                "1",
+                "2",
+                "-1",
+                "Error"
+            ],
+            "correct_answer": 0,
+            "explanation": "'firstIndex(of:)' returns the index of the element if found, otherwise nil. Here, the index of 2 is 1."
+        },
+        {
+            "id": 55,
+            "category": "Basic",
+            "question": "What is the difference between '==' and '===' in Swift?",
+            "options": [
+                "'==' checks value equality, '===' checks reference equality",
+                "'==' checks reference equality, '===' checks value equality",
+                "Both check value equality",
+                "Both check reference equality"
+            ],
+            "correct_answer": 0,
+            "explanation": "'==' compares values, while '===' checks if two references point to the same object."
+        },
+        {
+            "id": 56,
+            "category": "Advanced",
+            "question": "What does this code output?\n\nclass A {\n    func printMessage() {\n        print(\"Class A\")\n    }\n}\nclass B: A {\n    override func printMessage() {\n        print(\"Class B\")\n    }\n}\nlet obj: A = B()\nobj.printMessage()",
+            "options": [
+                "Class B",
+                "Class A",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "Swift supports method overriding. The dynamic type of 'obj' is 'B', so 'B's method is called."
+        },
+        {
+            "id": 57,
+            "category": "Basic",
+            "question": "What is the result of the following code?\n\nlet set: Set = [1, 2, 3]\nprint(set.contains(4))",
+            "options": [
+                "false",
+                "true",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'contains' method checks if an element exists in the set. Since 4 is not present, it returns 'false'."
+        },
+        {
+            "id": 58,
+            "category": "Advanced",
+            "question": "What does this code output?\n\nstruct S {\n    var value = 10\n    mutating func increment() {\n        value += 1\n    }\n}\nvar s = S()\ns.increment()\nprint(s.value)",
+            "options": [
+                "11",
+                "10",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "'mutating' allows the function to modify the properties of the struct."
+        },
+        {
+            "id": 59,
+            "category": "Basic",
+            "question": "What is the purpose of the 'defer' statement in Swift?",
+            "options": [
+                "To execute code just before exiting the current scope",
+                "To repeat code after a delay",
+                "To handle errors",
+                "To create immutable variables"
+            ],
+            "correct_answer": 0,
+            "explanation": "'defer' is used to schedule a block of code to execute at the end of the current scope."
+        },
+        {
+            "id": 60,
+            "category": "Advanced",
+            "question": "What will this code print?\n\nlet value: Int? = 10\nif case let unwrappedValue? = value {\n    print(unwrappedValue)\n} else {\n    print(\"nil\")\n}",
+            "options": [
+                "10",
+                "nil",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "'if case let ...' safely unwraps the optional and assigns it to 'unwrappedValue'."
+        },
+        {
+            "id": 61,
+            "category": "Basic",
+            "question": "Which function is used to iterate over a range in Swift?",
+            "options": [
+                "for-in",
+                "while",
+                "repeat-while",
+                "do-while"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'for-in' loop is used to iterate over ranges, collections, or sequences."
+        },
+        {
+            "id": 62,
+            "category": "Advanced",
+            "question": "What is the output of this code?\n\nlet range = 1...5\nlet result = range.map { $0 * $0 }\nprint(result)",
+            "options": [
+                "[1, 4, 9, 16, 25]",
+                "[1, 2, 3, 4, 5]",
+                "[5, 4, 3, 2, 1]",
+                "Error"
+            ],
+            "correct_answer": 0,
+            "explanation": "'map' applies the closure to each element in the range, squaring each number."
+        },
+        {
+            "id": 63,
+            "category": "Basic",
+            "question": "What is the result of the following code?\n\nlet string = \"Hello\"\nprint(string.count)",
+            "options": [
+                "5",
+                "4",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'count' property returns the number of characters in the string."
+        },
+        {
+            "id": 64,
+            "category": "Advanced",
+            "question": "What does this code do?\n\nclass A {\n    var value = 10\n    init() {\n        defer {\n            print(\"Deferred in init\")\n        }\n        print(\"Initializing\")\n    }\n}\nlet obj = A()",
+            "options": [
+                "Prints 'Initializing' and then 'Deferred in init'",
+                "Prints 'Deferred in init' and then 'Initializing'",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "'defer' statements in initializers execute after all other statements in the initializer."
+        },
+        {
+            "id": 65,
+            "category": "Basic",
+            "question": "What keyword is used to inherit a class in Swift?",
+            "options": [
+                "extends",
+                "inherits",
+                "override",
+                "None of the above"
+            ],
+            "correct_answer": 3,
+            "explanation": "Swift does not use specific keywords for inheritance. A subclass is created by specifying ': SuperClassName'."
+        },
+        {
+            "id": 66,
+            "category": "Advanced",
+            "question": "What will the following code output?\n\nlet x = Optional.some(42)\nswitch x {\ncase .some(let value):\n    print(value)\ncase .none:\n    print(\"nil\")\n}",
+            "options": [
+                "42",
+                "nil",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The '.some' case captures the value inside the optional."
+        },
+        {
+            "id": 67,
+            "category": "Basic",
+            "question": "What is the purpose of the 'typealias' keyword in Swift?",
+            "options": [
+                "To define an alternative name for an existing type",
+                "To create a new type",
+                "To define protocols",
+                "To implement inheritance"
+            ],
+            "correct_answer": 0,
+            "explanation": "'typealias' creates an alias for an existing type for better readability."
+        },
+        {
+            "id": 68,
+            "category": "Advanced",
+            "question": "What does this code do?\n\nstruct Counter {\n    private var count = 0\n    mutating func increment() {\n        count += 1\n    }\n    func getCount() -> Int {\n        return count\n    }\n}\nvar counter = Counter()\ncounter.increment()\nprint(counter.getCount())",
+            "options": [
+                "1",
+                "0",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'increment' function modifies 'count', and 'getCount' returns the updated value."
+        },
+        {
+            "id": 69,
+            "category": "Basic",
+            "question": "Which keyword is used to handle optionals in Swift?",
+            "options": [
+                "Optional",
+                "if let",
+                "guard let",
+                "All of the above"
+            ],
+            "correct_answer": 3,
+            "explanation": "Swift provides multiple ways to handle optionals, including 'if let', 'guard let', and 'Optional'."
+        },
+        {
+            "id": 70,
+            "category": "Advanced",
+            "question": "What will this code output?\n\nfunc fibonacci(_ n: Int) -> Int {\n    guard n > 1 else { return n }\n    return fibonacci(n - 1) + fibonacci(n - 2)\n}\nprint(fibonacci(5))",
+            "options": [
+                "5",
+                "8",
+                "13",
+                "Error"
+            ],
+            "correct_answer": 0,
+            "explanation": "The function recursively calculates the Fibonacci sequence. For n = 5, it returns 5."
+        },
+        {
+            "id": 71,
+            "category": "Basic",
+            "question": "What is the result of the following code?\n\nlet numbers = [1, 2, 3]\nprint(numbers[1])",
+            "options": [
+                "2",
+                "1",
+                "3",
+                "Error"
+            ],
+            "correct_answer": 0,
+            "explanation": "Arrays in Swift are zero-indexed, so 'numbers[1]' accesses the second element, which is 2."
+        },
+        {
+            "id": 72,
+            "category": "Advanced",
+            "question": "What is the output of the following code?\n\nlet value: Int? = 42\nif let unwrapped = value, unwrapped > 40 {\n    print(\"Greater than 40\")\n} else {\n    print(\"Not greater than 40\")\n}",
+            "options": [
+                "Greater than 40",
+                "Not greater than 40",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The optional 'value' is unwrapped and its condition (greater than 40) is satisfied."
+        },
+        {
+            "id": 73,
+            "category": "Basic",
+            "question": "Which of the following is a correct way to declare a constant in Swift?",
+            "options": [
+                "let x = 10",
+                "var x = 10",
+                "constant x = 10",
+                "const x = 10"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'let' keyword is used to declare constants in Swift."
+        },
+        {
+            "id": 74,
+            "category": "Advanced",
+            "question": "What does the following code output?\n\nlet items = [1, 2, 3]\nlet filtered = items.filter { $0 > 1 }\nprint(filtered)",
+            "options": [
+                "[2, 3]",
+                "[1, 2, 3]",
+                "[]",
+                "Error"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'filter' method returns elements that satisfy the condition. Here, it filters out elements greater than 1."
+        },
+        {
+            "id": 75,
+            "category": "Basic",
+            "question": "What is the output of the following code?\n\nlet name = \"John\"\nprint(\"Hello, \\(name)!\")",
+            "options": [
+                "Hello, John!",
+                "Hello, \\(name)!",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "String interpolation allows embedding variables within strings using '\\()'."
+        },
+        {
+            "id": 76,
+            "category": "Advanced",
+            "question": "What is the output of this code?\n\nfunc calculate(_ numbers: Int...) -> Int {\n    return numbers.reduce(0, +)\n}\nprint(calculate(1, 2, 3, 4))",
+            "options": [
+                "10",
+                "1",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The variadic parameter allows passing multiple values, which are summed using 'reduce'."
+        },
+        {
+            "id": 77,
+            "category": "Basic",
+            "question": "Which collection type guarantees unique elements in Swift?",
+            "options": [
+                "Set",
+                "Array",
+                "Dictionary",
+                "List"
+            ],
+            "correct_answer": 0,
+            "explanation": "Sets in Swift ensure all elements are unique."
+        },
+        {
+            "id": 78,
+            "category": "Advanced",
+            "question": "What will this code output?\n\nstruct Rectangle {\n    var width: Int\n    var height: Int\n    var area: Int {\n        return width * height\n    }\n}\nlet rect = Rectangle(width: 5, height: 4)\nprint(rect.area)",
+            "options": [
+                "20",
+                "9",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The computed property 'area' dynamically calculates the rectangle's area."
+        },
+        {
+            "id": 79,
+            "category": "Basic",
+            "question": "What is the difference between 'var' and 'let' in Swift?",
+            "options": [
+                "'var' declares a variable, 'let' declares a constant",
+                "'var' declares a constant, 'let' declares a variable",
+                "Both are used for variables",
+                "Both are used for constants"
+            ],
+            "correct_answer": 0,
+            "explanation": "'var' is used for mutable variables, while 'let' is used for immutable constants."
+        },
+        {
+            "id": 80,
+            "category": "Advanced",
+            "question": "What does this code do?\n\nclass Base {\n    required init() {}\n}\nclass Derived: Base {\n    required init() {\n        super.init()\n    }\n}",
+            "options": [
+                "Enforces subclasses to implement the initializer",
+                "Defines a private initializer",
+                "Overrides a superclass initializer",
+                "None of the above"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'required' keyword ensures that subclasses implement the designated initializer."
+        },
+        {
+            "id": 81,
+            "category": "Basic",
+            "question": "What is the output of this code?\n\nlet numbers = [10, 20, 30]\nprint(numbers.count)",
+            "options": [
+                "3",
+                "2",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'count' property returns the number of elements in the array."
+        },
+        {
+            "id": 82,
+            "category": "Advanced",
+            "question": "What will this code print?\n\nlet names = [\"Alice\", \"Bob\", \"Charlie\"]\nprint(names.sorted { $0 > $1 })",
+            "options": [
+                "[\"Charlie\", \"Bob\", \"Alice\"]",
+                "[\"Alice\", \"Bob\", \"Charlie\"]",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'sorted' method sorts the array in descending order based on the closure."
+        },
+        {
+            "id": 83,
+            "category": "Basic",
+            "question": "Which keyword is used to create an extension in Swift?",
+            "options": [
+                "extension",
+                "extend",
+                "add",
+                "implement"
+            ],
+            "correct_answer": 0,
+            "explanation": "'extension' is used to add new functionality to existing classes, structs, or enums."
+        },
+        {
+            "id": 84,
+            "category": "Advanced",
+            "question": "What is the purpose of the '@escaping' attribute in Swift closures?",
+            "options": [
+                "To indicate the closure can be stored and executed later",
+                "To execute the closure immediately",
+                "To mark a closure as optional",
+                "None of the above"
+            ],
+            "correct_answer": 0,
+            "explanation": "'@escaping' indicates that the closure may outlive the function in which it is defined."
+        },
+        {
+            "id": 85,
+            "category": "Basic",
+            "question": "What is the result of the following code?\n\nlet isEven = 4 % 2 == 0\nprint(isEven)",
+            "options": [
+                "true",
+                "false",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The modulo operator '%' checks for divisibility. 4 is divisible by 2, so the result is 'true'."
+        },
+        {
+            "id": 86,
+            "category": "Advanced",
+            "question": "What is the output of this code?\n\nclass Singleton {\n    static let shared = Singleton()\n    private init() {}\n}\nlet instance = Singleton.shared\nprint(instance)",
+            "options": [
+                "An instance of Singleton",
+                "Error",
+                "Nil",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The singleton pattern ensures a single instance of the class is created and accessed."
+        },
+        {
+            "id": 87,
+            "category": "Basic",
+            "question": "What is the correct way to declare a function in Swift?",
+            "options": [
+                "func myFunction() {}",
+                "function myFunction() {}",
+                "def myFunction() {}",
+                "fn myFunction() {}"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'func' keyword is used to declare functions in Swift."
+        },
+        {
+            "id": 88,
+            "category": "Advanced",
+            "question": "What does this code output?\n\nstruct S {\n    static let value = 10\n}\nprint(S.value)",
+            "options": [
+                "10",
+                "Error",
+                "Undefined behavior",
+                "Nil"
+            ],
+            "correct_answer": 0,
+            "explanation": "Static properties belong to the type itself and can be accessed without creating an instance."
+        },
+        {
+            "id": 89,
+            "category": "Basic",
+            "question": "Which Swift feature allows you to handle errors gracefully?",
+            "options": [
+                "do-catch",
+                "try-catch",
+                "guard-else",
+                "if-else"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'do-catch' block is used to handle errors thrown by functions."
+        },
+        {
+            "id": 90,
+            "category": "Advanced",
+            "question": "What will this code print?\n\nlet numbers = [1, 2, 3, 4]\nlet mapped = numbers.compactMap { $0 % 2 == 0 ? $0 : nil }\nprint(mapped)",
+            "options": [
+                "[2, 4]",
+                "[1, 2, 3, 4]",
+                "[nil, 2, nil, 4]",
+                "Error"
+            ],
+            "correct_answer": 0,
+            "explanation": "'compactMap' removes nil values and returns only the non-nil results of the transformation."
+        },
+        {
+            "id": 91,
+            "category": "Advanced",
+            "question": "What is the purpose of the 'lazy' keyword in Swift?",
+            "options": [
+                "To delay the initialization of a property until it is accessed",
+                "To initialize a property with a default value",
+                "To declare a constant",
+                "To make a property thread-safe"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'lazy' keyword is used to defer the initialization of a property until it is first accessed."
+        },
+        {
+            "id": 92,
+            "category": "Basic",
+            "question": "What will this code print?\n\nvar numbers = [1, 2, 3]\nnumbers.append(4)\nprint(numbers)",
+            "options": [
+                "[1, 2, 3, 4]",
+                "[1, 2, 3]",
+                "Error",
+                "[4]"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'append' method adds an element to the end of the array."
+        },
+        {
+            "id": 93,
+            "category": "Advanced",
+            "question": "What does the 'didSet' property observer do in Swift?",
+            "options": [
+                "Executes code after a property's value changes",
+                "Executes code before a property's value changes",
+                "Prevents changes to a property",
+                "Initializes a property"
+            ],
+            "correct_answer": 0,
+            "explanation": "'didSet' is triggered immediately after the value of a property is set."
+        },
+        {
+            "id": 94,
+            "category": "Basic",
+            "question": "What is the output of this code?\n\nlet greeting = \"Hello, World!\"\nprint(greeting.count)",
+            "options": [
+                "13",
+                "12",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'count' property returns the number of characters in the string, including spaces and punctuation."
+        },
+        {
+            "id": 95,
+            "category": "Advanced",
+            "question": "What will the following code print?\n\nstruct Point {\n    var x: Int\n    var y: Int\n    mutating func move(byX deltaX: Int, byY deltaY: Int) {\n        x += deltaX\n        y += deltaY\n    }\n}\nvar point = Point(x: 1, y: 1)\npoint.move(byX: 2, byY: 3)\nprint(\"\\(point.x), \\(point.y)\")",
+            "options": [
+                "3, 4",
+                "1, 1",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'mutating' keyword allows the method to modify the properties of the struct."
+        },
+        {
+            "id": 96,
+            "category": "Basic",
+            "question": "What does the '?' operator signify in Swift?",
+            "options": [
+                "Optional type",
+                "Ternary operator",
+                "Null type",
+                "Error handling"
+            ],
+            "correct_answer": 0,
+            "explanation": "The '?' operator is used to indicate an optional type, which may contain a value or nil."
+        },
+        {
+            "id": 97,
+            "category": "Advanced",
+            "question": "What will this code output?\n\nlet array = [1, 2, 3]\nlet result = array.map { $0 * 2 }\nprint(result)",
+            "options": [
+                "[2, 4, 6]",
+                "[1, 2, 3]",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'map' function transforms each element in the array based on the provided closure."
+        },
+        {
+            "id": 98,
+            "category": "Basic",
+            "question": "How do you safely unwrap an optional in Swift?",
+            "options": [
+                "Using 'if let' or 'guard let'",
+                "Using a switch statement",
+                "Using the 'optional!' syntax",
+                "All of the above"
+            ],
+            "correct_answer": 3,
+            "explanation": "Optionals can be safely unwrapped using 'if let', 'guard let', or switch, and forcefully with '!'."
+        },
+        {
+            "id": 99,
+            "category": "Advanced",
+            "question": "What will this code output?\n\nlet dict = [\"a\": 1, \"b\": 2, \"c\": 3]\nlet value = dict[\"d\", default: 0]\nprint(value)",
+            "options": [
+                "0",
+                "nil",
+                "Error",
+                "Undefined behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'default' parameter specifies a value to return when the key is not found."
+        },
+        {
+            "id": 100,
+            "category": "Basic",
+            "question": "Which of the following statements creates a range in Swift?",
+            "options": [
+                "1...5",
+                "[1, 2, 3, 4, 5]",
+                "Range(1, 5)",
+                "range(1, 5)"
+            ],
+            "correct_answer": 0,
+            "explanation": "The '...' operator creates a closed range that includes the start and end values."
+        }
+    ]
+}
